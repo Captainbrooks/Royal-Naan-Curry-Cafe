@@ -1,0 +1,26 @@
+.foods-available {
+    text-align: center;
+    padding: 20px; /* Center the text inside .foods-available */
+  }
+  
+  .food-gallery {
+    padding: 50px;
+    display: flex; /* Use flexbox */
+    flex-wrap: wrap;
+    flex-shrink: 0.5; /* Wrap items if they overflow */
+    justify-content: center; /* Center items horizontally */
+  }
+  
+  .each-food {
+  
+  margin: 20px;/* Add margin to each food item for spacing */
+    text-align: center; /* Center text inside each food item */
+  }
+
+
+  .food-image{
+    height: 250px;
+    border-radius: 50%;
+    margin-bottom: 15px;
+  }
+  

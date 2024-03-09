@@ -1,0 +1,40 @@
+.admin-dashboard{
+    display: flex;
+    flex-direction: row;
+
+}
+
+.admin-dashboard-sidebar{
+    /* margin-left: 10px; */
+    width: 30%;
+     height: 100vh;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0; 
+    color: white;
+    /* box-shadow: 0 4px 8px rgba(0, 0, 0, 0.185); */
+
+background-color: #5c5c59;
+}
+.content{
+    width: 80%;
+}
+
+
+
+.user-container{
+    background-color: #e9eeeefe;
+    margin: 10px;
+
+    display: flex;
+}
+
+
+
+
+input.error ,textarea.error,select.error{
+    border: 1px solid red;
+}
+
+
+

@@ -1,0 +1,229 @@
+.cart-page {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+
+}
+
+
+.cart {
+
+
+
+    width: 60%;
+    /* border-right: 2px solid gray; */
+    margin: 20px;
+
+
+    display: flex;
+    flex-direction: column;
+
+    /* box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1); */
+
+}
+
+.cart-container {
+    display: flex;
+    flex-direction: column;
+
+
+}
+
+.cart-info {
+    display: flex;
+    flex-direction: column;
+}
+
+
+
+.cart-items {
+
+    margin: 15px;
+
+
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    padding: 5px;
+}
+
+.cart-food-image {
+
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    padding: 10px;
+
+}
+
+.food-info {
+
+    width: 300px;
+
+    display: flex;
+    flex-direction: column;
+
+    justify-content: space-around;
+
+
+
+
+    /* padding: 30px; */
+
+}
+
+
+
+
+.redirect-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.buttons {
+
+
+    display: flex;
+    flex-direction: row;
+
+    justify-content: space-around;
+    align-items: center;
+
+
+}
+
+.text-customize {
+    font-weight: bolder;
+}
+
+
+.remove-btn {
+    margin-top: 20px;
+}
+
+
+
+
+
+
+.food {
+    display: flex;
+    width: 180px;
+
+
+
+    border-radius: 50%;
+
+
+
+
+    object-fit: cover;
+
+
+
+
+
+
+
+}
+
+
+
+.cart-food-info {
+    margin-top: 20px;
+}
+
+
+
+
+
+
+
+
+/* css for bill  */
+
+.bill {
+    width: 30%;
+    height: fit-content;
+    position: sticky;
+    margin-bottom: 100px;
+
+    top: 200px;
+
+    padding: 10px;
+
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.185);
+}
+
+.small {
+    cursor: pointer;
+    color: rgb(219, 132, 26);
+}
+
+.small:hover {
+    color: orange;
+}
+
+
+
+.bill-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: baseline;
+
+}
+
+.billing-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 30px;
+}
+
+
+.billing-table td {
+    text-align: center;
+
+}
+
+.billing-row {
+    font-weight: bold;
+}
+
+.billing-row .td {
+    padding: 5px;
+}
+
+
+.total {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+}
+
+.total-money {
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.price {
+    font-weight: bold;
+}
+
+
+.checkout {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    margin-top: 30px;
+}

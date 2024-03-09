@@ -1,0 +1,276 @@
+.menu-items {
+    border: 1px solid green;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+#starters{
+    border:1px solid red;
+}
+
+#main-courses{
+    border: 1px solid red;
+}
+
+#traditional-breads{
+    border:1px solid red;
+}
+
+#drink-menus{
+    border:1px solid red;
+}
+
+#desert-menus{
+    border:1px solid red;
+}
+
+
+.starter-title{
+    /* display: flex;
+    justify-content: start !important; */
+}
+
+
+.starter-menus{
+    border: 1px solid brown;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 10px;
+
+  
+}
+
+
+
+
+.starter-food-container{
+ border: 1px solid brown;
+ margin: 0 !important;
+ 
+}
+
+.each-starter{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid  black;
+    margin:10px;
+}
+
+.starter-info{
+    padding: 5px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+
+
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+
+.border-container {
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+} 
+
+ .container-fluid {
+    display: flex;
+    padding-top: 20px;
+    padding-left: 50px;
+    justify-content: flex-start;
+    margin-top: 50px 0 30px;
+}
+
+/* .title {} */
+
+
+.container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+
+
+    margin-bottom: 30px;
+    margin-top: 30px;
+
+
+}
+
+
+/* .each-starter {
+    text-align: center;
+    margin: 10px 70px 10px 70px;
+
+}
+
+.each-starter button {
+    border-radius: 20px;
+    color: black;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+} */
+
+.each-starter button:hover {
+    background-color: orange;
+    color: white;
+}
+
+
+
+.starter,
+.breads,
+.drink {
+    max-width: 400px;
+    width: 100%;
+    height: 180px;
+    border-radius: 50%;
+    margin-bottom: 30px;
+}
+
+.title-menu {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.veg-items,
+.chicken-items,
+.mutton-items,
+.bread-items,
+.drink-items {
+    border-radius: 20px;
+    text-align: center;
+    padding: 20px;
+    box-shadow: 0 0 2px rgba(0, 0, 0, 0.1);
+
+    width: 30%;
+    margin: 25px 18px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+
+.beverage {
+    border-radius: 20px;
+    text-align: center;
+    padding: 5px;
+    box-shadow: 0 0 2px rgba(0, 0, 0, 0.1);
+
+    width: 20%;
+    margin: 25px 25px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+
+
+
+.veg-items:hover,
+.chicken-items:hover,
+.mutton-items:hover,
+.bread-items:hover,
+.drink-items:hover,
+.beverage:hover {
+    background-color: #f5f1f1ea;
+}
+
+.veg-items button,
+.chicken-items button,
+.mutton-items button,
+.bread-items button,
+.drink-items button,
+.beverage button {
+    max-width: 300px;
+    border-radius: 20px;
+}
+
+
+
+
+
+/* css for sidebar logic */
+
+
+.menu-page-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    position: relative;
+    /* padding: 100px; */
+}
+
+.sidebar {
+    margin-left: 10px;
+    width: 20%;
+     height: 50vh;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 100px; 
+
+    margin-top: 20px;
+    margin-bottom: 50px;
+    /* box-shadow: 0 4px 8px rgba(0, 0, 0, 0.185); */
+
+    border-right: 2px solid rgba(140, 136, 136, 0.438);
+
+
+
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+
+
+
+
+}
+
+.sidebar .text-muted{
+    font-weight: bold;
+    padding: 10px;
+    cursor: pointer;
+
+}
+.sidebar-tracking{
+    background-color:rgba(255, 166, 0, 0.287);
+    border-radius: 20px;
+}
+.sidebar-tracking:hover{
+    background-color:rgba(255, 166, 0, 0.287);
+    border-radius: 20px;
+}
+
+.sidebar-head{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+.sidebar-body{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.menu-items {
+    flex: 1; /* This allows the menu-items to take remaining space */
+    padding-left: 20px; /* Add some padding to separate the sidebar from menu-items */
+}

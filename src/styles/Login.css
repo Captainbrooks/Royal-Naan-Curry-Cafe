@@ -1,0 +1,31 @@
+.login-page {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+form {
+
+    display: flex;
+    flex-direction: column;
+}
+
+.container-form {
+    border: 2px solid #dededfdf;
+    max-width: max-content;
+    padding: 10px;
+}
+
+.logo-style {
+    width: 20%;
+    height: 10%;
+}
+
+.login-button {
+    margin-bottom: 15px;
+}
+
+.text-secondary {
+    margin-bottom: 10px;
+}

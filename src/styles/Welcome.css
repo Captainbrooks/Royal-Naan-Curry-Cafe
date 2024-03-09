@@ -1,0 +1,30 @@
+.body-container1 {
+    display: flex; /* Use flexbox */
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    height: 50vh;
+    padding: 50px; /* Set height to the viewport height for vertical centering */
+  }
+  
+  .welcome {
+    display: flex;
+    flex-direction: column;
+    text-align: center; /* Center text inside welcome div */
+  }
+
+  .order-online button {
+    margin-top: 30px;
+    width: 50%;
+    border-radius: 20px;
+    background-color: rgba(255, 166, 0, 0.799);
+    outline: none;
+    color:aliceblue;
+    font-weight: bold;
+    font-size: 20px;
+    transition: background-color 0.3s, color 0.3s; 
+}
+
+.order-online button:hover {
+    background-color: orange;
+    color: white;
+}

@@ -1,0 +1,107 @@
+.ratings {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    text-align: center;
+}
+
+
+.reviews-container {
+
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    flex-wrap: wrap;
+
+
+ 
+
+
+
+
+
+
+
+
+}
+
+.each-review {
+    display: flex;
+    flex-direction: column;
+   
+    margin: 10px;
+    background-color: aliceblue;
+    border-radius: 20px;
+
+
+
+
+
+
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+
+
+
+
+
+
+
+
+}
+
+.review-header {
+    display: flex;
+    flex-direction: row;
+    padding: 10px;
+
+    justify-content: start;
+    align-items: center;
+
+
+}
+
+.review-body {
+    display: flex;
+    flex-direction: column;
+
+
+
+
+
+
+}
+
+
+
+
+.profile {
+    margin: 5px;
+    border-radius: 100%;
+
+    height: 50px;
+    width: 50px;
+
+
+    background-image: url("../images//customerlogo.png");
+    background-position: center;
+    background-size: 100% 100%;
+
+}
+
+
+.customer-name {
+    margin-left: 10px;
+}
+
+.star-icon {
+    color: orange;
+}
+
+.ratings-description {
+    text-align: left;
+    padding: 20px;
+
+    font-size: medium;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif
+}

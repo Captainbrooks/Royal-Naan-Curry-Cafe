@@ -1,0 +1,27 @@
+.form-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    text-align: center;
+
+}
+
+.form-container h1{
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+
+
+
+.form{
+    display: flex;
+    max-width: 500px;
+    width: 100%;
+    flex-direction: column;
+    padding: 30px;
+    background-color: rgb(245, 247, 249);
+    border-radius: 20px;
+}

@@ -1,0 +1,88 @@
+.custom-navbar{
+    max-height: 600px;
+    height: 50%;
+    padding: 40px;
+
+
+
+}
+
+
+/* To center the nav-items in Navbar */
+
+.navbar-collapse{
+
+    display: flex;
+  
+    justify-content: space-around;
+  
+}
+
+/* end */
+.logo-img{
+ 
+filter:brightness(400%);
+    height: 100px;
+}
+.nav-link:hover{
+    background-color:#f8f9fa70;
+    border-radius: 20px;  
+
+}
+
+.navbar-nav .nav-item.active .nav-link {
+     color: orange; 
+    
+    border-radius: 20px; 
+    font-size: 18px; 
+  } 
+
+  .navbar-toggler{
+    background-color: transparent;
+    border: none;
+    outline: none;
+  }
+
+
+
+
+
+
+
+  /* Navbar.css */
+
+.navbar-collapse {
+    transition: max-height 0s ease-in;
+  }
+  
+
+   .custom-navbar.expanded .navbar-collapse {
+    max-height: 600px; 
+  }
+  
+.order button{
+  width:120%;
+  background-color: rgba(255, 166, 0, 0.799);
+  color:aliceblue;
+  font-size: 20px;
+  outline: none;
+
+  border-radius: 20px;
+
+}
+.order button:hover{
+
+  background-color: orange;
+    color: white;
+
+}
+
+
+   
+
+
+
+
+
+
+  
