@@ -90,29 +90,42 @@ const {foodtype,handleDelete}=useHandleDelete(data);
         <h1 className="text-warning">Starter Menus</h1>
       </div>
 
-      <div className="container starter-food-container">
+      <div className="container">
         {foodtype.length > 0 ?
           foodtype.map((starter) => (
-            <div className="each-starter" key={starter.id}>
-              <div className="image">
-              <img src={starter.imgUrl} alt="starter" className="starter" />
-              </div>
-              <div className="starter-info">
-              <h3 className="text-danger" style={{ fontWeight: "550" }}>
-                {starter.name}
-              </h3>
-              <span className="text-muted">${starter.price}</span>
-              <p className="text-secondary">{starter.description}</p>
-              </div>
+            // <div className="each-starter" key={starter.id}>
+            //   <div className="image">
+            //   <img src={starter.imgUrl} alt="starter" className="starter" />
+            //   </div>
+            //   <div className="starter-info">
+            //   <h3 className="text-danger" style={{ fontWeight: "550" }}>
+            //     {starter.name}
+            //   </h3>
+         
+            //   <p className="text-secondary">{starter.description}</p>
+            //   </div>
 
-              {
-                isAdmin ? 
-                <div className="admin-control">
-                <button className="btn btn-danger" onClick={()=>handleDelete(starter._id)} style={{borderRadius:"20px"}}>Delete</button>
-                 </div>:
-                 (<Link to="/order-online"><button className="text-dark btn btn-warning" onClick={()=>dispatch(AddToCartArray(starter))} style={{borderRadius:"20px"}}>Order Now</button></Link>)
-               
-              }
+            // 
+            // </div>
+
+
+            <div className="each-starter" >
+              <div class="card starter-food-container" style={{ width: "18rem" ,height:"400px"}} key={starter.id}>
+                <img class="card-img-top" src={starter.imgUrl} alt="starter item" height={"200px"} style={{ borderRadius: "50%" }} />
+                <div class="card-body" style={{textAlign:"center"}}>
+                  <h3 class="card-title text-warning">{starter.name}</h3>
+                     <span className="text-muted">${starter.price}</span>
+                  <p class="card-text text-dark">{starter.description}</p>
+                  {
+                    isAdmin ?
+                      <div className="admin-control">
+                        <button className="btn btn-danger" onClick={() => handleDelete(starter._id)} style={{ borderRadius: "20px" }}>Delete</button>
+                      </div> :
+                      (<Link to="/order-online"><button className="text-dark btn btn-warning" onClick={() => dispatch(AddToCartArray(starter))} style={{ borderRadius: "20px" }}>Order Now</button></Link>)
+
+                  }
+                </div>
+              </div>
             </div>
           )):
 

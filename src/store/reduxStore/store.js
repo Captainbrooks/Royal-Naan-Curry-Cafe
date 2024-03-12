@@ -11,9 +11,11 @@
 
 // reduxStore/store.js
 
+import { useSyncExternalStore } from 'react-redux';
+
 import { configureStore } from "@reduxjs/toolkit";
 import { persistReducer, persistStore } from "redux-persist";
-import storage from "redux-persist/lib/storage"; // defaults to localStorage
+import storage from "redux-persist/lib/storage";
 import userReducer from "../features/userSlice";
 import cartReducer from "../features/cartSlice";
 

@@ -84,8 +84,8 @@ function TraditionalBreads() {
   //     },
   // ];
   return (
-    <div className="traditional-breads-menu">
-      <div className="container-fluid">
+    <div className="container">
+       <div className="container starter-title">
         <h1 className="text-warning">Traditional Breads</h1>
       </div>
 
