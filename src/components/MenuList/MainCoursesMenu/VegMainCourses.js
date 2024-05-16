@@ -1,11 +1,11 @@
 import React from 'react'
-import "../../styles/AllMenu.css";
-import useFetchMainCourses from '../../Hook/useFetchMainCourses';
-import { AddToCartArray,removeFromCart } from '../../store/features/cartSlice';
+import "../../../styles/AllMenu.css";
+import useFetchMainCourses from '../../../Hook/useFetchMainCourses';
+import { AddToCartArray,removeFromCart } from '../../../store/features/cartSlice';
 import { Link } from 'react-router-dom';
 import { useDispatch, useSelector } from 'react-redux';
-import useHandleDelete from '../../Hook/useHandleDelete';
-import { selectIsAdmin } from '../../store/features/userSlice';
+import useHandleDelete from '../../../Hook/useHandleDelete';
+import { selectIsAdmin } from '../../../store/features/userSlice';
 
 function VegMainCourses() {
   const dispatch=useDispatch();

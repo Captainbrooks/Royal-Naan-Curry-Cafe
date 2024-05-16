@@ -8,7 +8,7 @@ function ForgotPassword() {
     const [error,setError]=useState("");
     const [message,setMessage]=useState("");
 
-    const [isUser,setisUser]=useState("");
+
 
 
     

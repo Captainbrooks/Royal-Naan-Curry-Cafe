@@ -2,8 +2,8 @@ import React from 'react'
 import Navbar from '../components/Header/Navbar'
 
 import Footer from '../components/Footer/Footer'
-import ContactForm from '../components/Body/ContactForm'
-import AddFoodForm from '../components/Body/AddFoodForm'
+import ContactForm from '../components/UserControls/ContactForm'
+import AddFoodForm from '../components/AdminControls/AddFoodForm'
 
 function ContactUs() {
   return (

@@ -1,14 +1,8 @@
 import React, { useEffect } from "react";
 
-import "../../styles/AllMenu.css";
-import samosa from "../../images/samosa.webp";
-import pakauras from "../../images/pakoras.webp";
-import tandoori from "../../images/tandori.webp";
-import chickentikka from "../../images/chickentikka.webp";
-import pannertikka from "../../images/paneertikka.webp";
-import alutikki from "../../images/alutikki.webp";
-import Papdichat from "../../images/papdichat.webp";
-import useFetchMainCourses from "../../Hook/useFetchMainCourses";
+import "../../../styles/AllMenu.css";
+
+import useFetchMainCourses from "../../../Hook/useFetchMainCourses";
 import VegMainCourses from "./VegMainCourses";
 import ChickenMainCourses from "./ChickenMainCourses";
 import MuttonMainCourses from "./MuttonMainCourses";

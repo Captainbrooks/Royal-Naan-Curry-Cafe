@@ -1,10 +1,12 @@
 import React, { useState, useEffect } from "react";
 import "../../styles/AllMenu.css";
-import StarterMenus from "./StarterMenus";
-import MainCourses from "./MainCourses";
-import DrinkMenu from "./DrinkMenu";
-import TraditionalBreads from "./TraditionalBreads";
-import Deserts from "./Deserts";
+
+import StarterMenus from "./StarterMenu/StarterMenus";
+import MainCourses from "./MainCoursesMenu/MainCourses";
+import TraditionalBreads from "./TraditionalBreadsMenu/TraditionalBreads";
+import DrinkMenu from "./DrinksMenu/DrinkMenu";
+import Deserts from "./DesertMenu/Deserts";
+
 
 function AllMenu() {
   const [section, setSection] = useState('');
@@ -62,19 +64,19 @@ function AllMenu() {
 
       <div className="menu-items">
           <div id="starters">
-            <StarterMenus />
+            <StarterMenus/>
           </div>
           <div id="main-courses">
-            <MainCourses />
+           <MainCourses/>
           </div>
           <div id="traditional-breads">
-            <TraditionalBreads />
+          <TraditionalBreads/>
           </div>
           <div id="drink-menus">
-            <DrinkMenu />
+           <DrinkMenu/>
           </div>
           <div id="desert-menus">
-            <Deserts />
+          <Deserts/>
           </div>
         </div>
     </div>
