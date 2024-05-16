@@ -1,11 +1,11 @@
-import React, { useEffect, useState } from 'react'
+import React, {  useState } from 'react'
 
 import { Navigate } from 'react-router-dom';
 
 
 
 
-import { FaUser, FaEnvelope, FaLock } from "react-icons/fa";
+import { FaLock } from "react-icons/fa";
 
 import { useLocation } from 'react-router-dom';
 

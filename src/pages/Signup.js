@@ -1,12 +1,12 @@
-import { useEffect, useState } from "react";
+import {useState } from "react";
 import { useSignup } from "../Hook/useSignup";
 import "../styles/Signup.css";
 import { FaUser, FaEnvelope,FaLock, FaPhone } from "react-icons/fa";
 import { Button } from "react-bootstrap";
 import logo from "../images/logo-no-background.png"
 import { Link } from 'react-router-dom';
-import {selectUser} from "../store/features/userSlice"
-import { useSelector } from "react-redux";
+
+
 
 const Signup = () => {
   const [email, setEmail] = useState("");
@@ -14,13 +14,12 @@ const Signup = () => {
   const [confirmPassword, setconfirmPassword] = useState("");
   const [phone, setPhone] = useState("");
   const [username, setUserName] = useState("");
-  const { signup, error, isLoading } = useSignup();
+  const { signup, error } = useSignup();
 
 
-  const [isUser,setIsUser]=useState("");
 
 
-  const user=useSelector(selectUser);
+
 
 
 

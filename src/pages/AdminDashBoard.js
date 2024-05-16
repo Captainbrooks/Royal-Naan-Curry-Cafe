@@ -12,12 +12,12 @@ import { Link, useLocation } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faBars, faTimes } from '@fortawesome/free-solid-svg-icons';
 import { FaShoppingCart } from 'react-icons/fa';
-import AddFoodForm from '../components/Body/AddFoodForm';
-import ViewUsers from '../components/Body/ViewUsers';
-import Admin from '../components/Body/Admin';
-import CreateEvents from '../components/Body/CreateEvents';
-import ViewReservation from '../components/Body/ViewReservation';
-import AddFood from '../components/Body/AddFood';
+import AddFoodForm from '../components/AdminControls/AddFoodForm';
+import ViewUsers from '../components/AdminControls/ViewUsers';
+import Admin from '../components/AdminControls/Admin';
+import CreateEvents from '../components/AdminControls/CreateEvents';
+import ViewReservation from '../components/AdminControls/ViewReservation';
+import AddFood from '../components/AdminControls/AddFood';
 
 
 

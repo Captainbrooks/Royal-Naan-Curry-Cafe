@@ -1,12 +1,12 @@
 import React, { useEffect, useState } from 'react'
-import "../../styles/AllMenu.css";
+import "../../../styles/AllMenu.css";
 
-import useFetchByCategory from '../../Hook/useFetchByCategory';
+import useFetchByCategory from '../../../Hook/useFetchByCategory';
 import { Link } from 'react-router-dom';
 import { useSelector,useDispatch } from 'react-redux';
-import { selectIsAdmin, selectIsVerifiedAdmin} from '../../store/features/userSlice';
-import {AddToCartArray} from '../../store/features/cartSlice';
-import useHandleDelete from '../../Hook/useHandleDelete';
+import { selectIsAdmin, selectIsVerifiedAdmin} from '../../../store/features/userSlice';
+import {AddToCartArray} from '../../../store/features/cartSlice';
+import useHandleDelete from '../../../Hook/useHandleDelete';
 
 
 function StarterMenus() {

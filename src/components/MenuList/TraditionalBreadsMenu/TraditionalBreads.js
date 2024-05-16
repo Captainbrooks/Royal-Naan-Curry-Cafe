@@ -1,11 +1,11 @@
 import React from "react";
-import Papdichat from "../../images/papdichat.webp";
-import useFetchByCategory from '../../Hook/useFetchByCategory';
+
+import useFetchByCategory from '../../../Hook/useFetchByCategory';
 import { useDispatch, useSelector } from "react-redux";
-import { AddToCartArray } from "../../store/features/cartSlice";
+import { AddToCartArray } from "../../../store/features/cartSlice";
 import { Link } from "react-router-dom";
-import useHandleDelete from '../../Hook/useHandleDelete';
-import { selectIsAdmin } from "../../store/features/userSlice";
+import useHandleDelete from '../../../Hook/useHandleDelete';
+import { selectIsAdmin } from "../../../store/features/userSlice";
 
 function TraditionalBreads() {
 

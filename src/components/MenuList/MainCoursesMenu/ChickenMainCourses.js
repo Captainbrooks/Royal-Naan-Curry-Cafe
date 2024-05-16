@@ -1,10 +1,10 @@
 import React from 'react'
-import useFetchMainCourses from '../../Hook/useFetchMainCourses';
+import useFetchMainCourses from '../../../Hook/useFetchMainCourses';
 import { useDispatch, useSelector } from 'react-redux';
-import { AddToCartArray,removeFromCart } from '../../store/features/cartSlice';
+import { AddToCartArray,removeFromCart } from '../../../store/features/cartSlice';
 import { Link } from 'react-router-dom';
-import useHandleDelete from '../../Hook/useHandleDelete';
-import { selectIsAdmin } from '../../store/features/userSlice';
+import useHandleDelete from '../../../Hook/useHandleDelete';
+import { selectIsAdmin } from '../../../store/features/userSlice';
 
 function ChickenMainCourses() {
 

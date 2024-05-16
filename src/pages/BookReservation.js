@@ -2,7 +2,7 @@ import React from 'react'
 import Navbar from '../components/Header/Navbar'
 
 import Footer from '../components/Footer/Footer'
-import ReservationForm from '../components/Body/ReservationForm'
+import ReservationForm from '../components/UserControls/ReservationForm'
 
 function BookReservation() {
   return (

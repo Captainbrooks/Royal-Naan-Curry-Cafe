@@ -1,29 +1,30 @@
 import React from 'react'
-import useFetchDrinks from '../../Hook/useFetchDrinks';
+import useFetchDrinks from '../../../Hook/useFetchDrinks';
 import { useDispatch, useSelector } from 'react-redux';
-import { AddToCartArray } from '../../store/features/cartSlice';
+import { AddToCartArray } from '../../../store/features/cartSlice';
 import { Link } from 'react-router-dom';
-import useHandleDelete from '../../Hook/useHandleDelete';
-import { selectIsAdmin } from '../../store/features/userSlice';
+import useHandleDelete from '../../../Hook/useHandleDelete';
+import { selectIsAdmin } from '../../../store/features/userSlice';
 
-function CoffeeAndTea() {
+function SoftDrinks() {
 
   const isAdmin=useSelector(selectIsAdmin);
 
   const dispatch=useDispatch();
-  const {data,message,isLoading}=useFetchDrinks("Coffee & Tea");
 
-  const {foodtype,handleDelete}=useHandleDelete(data);
+  
 
+    const {data,message,isLoading}=useFetchDrinks("Soft Drinks");
+
+    const {foodtype,handleDelete}=useHandleDelete(data);
 
   return (
-  <div className="coffee-tea">
-    <div className="container">
-        <h1 className="text-white bg-success title-menu" style={{padding:"10px",borderRadius:"20px"}}>Coffee & Tea</h1>
+  <div className="softdrinks">
+     <div className="container">
+        <h1 className="text-white bg-success title-menu" style={{padding:"10px",borderRadius:"20px"}}>Soft Drinks</h1>
       </div>
-
-
-      <div className="container border-container">
+    
+          <div className="container border-container">
             {foodtype &&
               foodtype.map((drink) => (
                 <div className="drink-items" key={drink.id}>
@@ -44,9 +45,8 @@ function CoffeeAndTea() {
                 </div>
               ))}
               </div>
-
   </div>
   )
 }
 
-export default CoffeeAndTea
+export default SoftDrinks
