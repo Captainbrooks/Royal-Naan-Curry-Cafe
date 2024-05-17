@@ -10,11 +10,11 @@ function Home() {
   return (
   <div className="home-page">
      <Navbar/>
-    <Welcome/>
+    {/* <Welcome/>
     <Foods/>
     <About/>
     <Ratings/>
-    <Footer/>
+    <Footer/> */}
   </div>
   )
 }
