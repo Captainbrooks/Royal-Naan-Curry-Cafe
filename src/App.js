@@ -1,5 +1,7 @@
 import { useSyncExternalStore } from 'react';
 import { BrowserRouter as Router, Routes, Route,Navigate} from "react-router-dom";
+import 'bootstrap/dist/css/bootstrap.min.css';
+import 'bootstrap/dist/js/bootstrap.bundle.min';
 
 import Home from "./pages/Home";
 import Menu from "./pages/Menu";
