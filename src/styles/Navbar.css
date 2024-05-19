@@ -1,18 +1,45 @@
 /* Default for screens smaller than 576px */
 .logo-img {
   width: 60%;
+  filter: brightness(400%);
+}
+
+/* Screens between 576px and 767px */
+@media (min-width: 576px) and (max-width: 767px) {
+  .logo-img {
+    width: 50%;
+  }
 }
 
 /* Screens wider than 768px */
 @media (min-width: 768px) {
   .logo-img {
-    width: 40%;
+    width: 50%;
   }
 }
 
-/* Screens between 576px and 768px */
-@media (min-width: 576px) and (max-width: 767px) {
-  .logo-img {
-    width: 50%;
-  }
+/* Navbar links */
+.navbar-nav .nav-link {
+
+  color: gainsboro;
+  padding: 0.5rem 1rem;
+  white-space: nowrap;
+}
+
+/* Apply margin-left to all navbar links except the first one */
+.navbar-nav .nav-item:not(:first-child) .nav-link {
+  margin-left: 1rem;
+}
+
+/* Hover effect for navbar links */
+.navbar-nav .nav-item .nav-link:hover {
+  background-color:rgb(82, 80, 80);
+  border-radius: 20px;
+}
+
+/* Active link styling */
+.navbar-nav .nav-item .nav-link.active {
+  color: rgb(240, 181, 71);
+  font-weight: bold;
+  border-radius: 20px;
 }
