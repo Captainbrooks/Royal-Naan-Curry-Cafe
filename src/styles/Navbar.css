@@ -1,3 +1,18 @@
-.logo-img{
+/* Default for screens smaller than 576px */
+.logo-img {
   width: 60%;
+}
+
+/* Screens wider than 768px */
+@media (min-width: 768px) {
+  .logo-img {
+    width: 40%;
+  }
+}
+
+/* Screens between 576px and 768px */
+@media (min-width: 576px) and (max-width: 767px) {
+  .logo-img {
+    width: 50%;
+  }
 }
