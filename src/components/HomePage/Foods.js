@@ -6,6 +6,7 @@ import '../../styles/Foods.css'
 import butterchicken from "../../images/butterchicken.webp"
 import palakpaneer from "../../images/palakpaneer.webp"
 import nepalithali from "../../images/nepalithali.webp"
+import { width } from '@fortawesome/free-brands-svg-icons/fa42Group'
 
 function Foods() {
 
@@ -32,18 +33,35 @@ const foods=[
 ]
 
   return (
-  <div className="foods-available">
-    <h2 className="text-danger">Food Gallery</h2>
+  <div className="container-md text-md-center">
+    <div class="container-lg p-3 mb-2 mt-5 bg-info-subtle text-info-emphasis text-start text-sm-center">
+    <h2 className="text-warning fw-bold">Food Gallery</h2>
+    </div>
+
+  
 
 
-    <div className="food-gallery">
+    <div className="container-md">
         {foods && foods.map((food)=>(
-            <div className="each-food" key={food.id}>
+            <div className="each-food text-center" key={food.id}>
 
-<img className='food-image' src={food.img} alt="Food Image" />
+                
+<div className="container">
+<img className='food-image img-fluid' src={food.img} alt="Food Image" />
+</div>
 <h3 >{food.name}</h3>
 <p>{food.description}</p>
             </div>
+
+
+
+
+
+
+
+
+
+
         ))}
     </div>
   </div>
