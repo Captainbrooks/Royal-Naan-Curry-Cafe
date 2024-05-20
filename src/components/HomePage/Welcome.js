@@ -10,27 +10,27 @@ function Welcome() {
 
 
   return (
-    <div className="body-container1">
+    <div className="container p-2 custom-welcome">
       <div className="welcome">
-        <h1>Welcome to Royal Naan Curry <br /> & <br />Cafe</h1>
+        <h1 class="text-danger font-weight-bold text-center my-4">
+          Welcome to Royal Naan Curry <br /> & <br /> Cafe
+        </h1>
 
-        <span>Contemporary Indian Cuisine with freshly local produce
+
+        <p className='text-muted text-center text-md-left'>Contemporary Indian Cuisine with freshly local produce
           and constantly inventing creative platters
-        </span>
+        </p>
+
 
         {user ?
           (<Link to="/order-online"><div className="order-online">
-            <button type="button" className="btn btn-primary">Order Online</button>
+            <button type="button" className="btn btn-warning">Order Online</button>
           </div></Link>)
           :
           (<Link to="/login"> <div className="order-online">
-            <button type="button" className="btn btn-primary">Order Online</button>
+            <button type="button" className="btn btn-warning">Order Online</button>
           </div></Link>
-          )
-
-        }
-
-
+          )}
 
       </div>
     </div>

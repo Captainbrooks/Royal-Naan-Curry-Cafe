@@ -1,45 +1,12 @@
-.footer {
-    background-color:rgb(247, 247, 247);
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    padding: 20px;
 
-
-}
-
-.footer-head {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-around;
-}
-
+/* Default for screens smaller than 576px */
 .restro-logo {
-    padding: 10px;
-    filter: brightness(-50%);
-    display: flex;
-    height: 180px;
-    margin-bottom: 50px;
-    margin-top: 20px;
-
-   
-}
-.footer-body {
-    display: flex;
-    justify-self: start;
-    flex-direction: column;
-    margin-top: 30px;
-    text-align: left;
-    /* padding: 50px; */
-}
-
-.text-secondary {
-    margin-bottom: 30px;
-}
-
+    width: 60%;
+    filter: brightness(-400%);
+  }
+  
 .reservations-icons {
-    margin-inline: 30px;
+    margin-inline: 2rem;
 
 }
 
@@ -49,9 +16,9 @@
 }
 
 .each-icon {
-    padding: 10px;
-    margin-top: 20px;
-    margin-bottom: 20px;
+    padding: 0.75rem;
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
 }
 
 .subscribe {
@@ -67,15 +34,16 @@
 .subscribe .text-muted {
     justify-content: center;
 }
+
 .subcribe-input-box {
     display: flex;
-    width: 50%;
-    margin-top: 40px;
-    padding: 10px 20px;
+    width: 65%;
+    margin-top: 2.5rem;
+    padding: 0.75rem 1.5rem;
     border: 2px solid #ccc;
-    font-size: 16px;
+    font-size:1rem;
     outline: none;
-    border-radius: 20px;
+    border-radius:1.5rem;
     transition: border-color 0.3s ease;
     transition: background-color 0.3s ease;
 }
@@ -89,23 +57,18 @@
     outline: none;
     background-color: rgba(255, 136, 0, 0.96);
     width: 50%;
-    margin-top: 20px;
-    margin-bottom: 20px;
-    padding: 10px;
-
-    border-radius: 20px;
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+    padding: 0.5rem;
+    border-radius: 1.5rem;
     color: white;
-    font-size: large;
+    font-size: 1rem;
     font-weight: bold;
 }
 
-
-
 .social-media-icons {
-    padding: 10px;
+    padding: 1rem;
 }
-
-
 
 .footer-foot {
     display: flex;

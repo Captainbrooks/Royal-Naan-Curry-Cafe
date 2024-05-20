@@ -62,8 +62,11 @@ function Ratings() {
   ];
 
   return (
-    <div className="ratings">
-      <h2>Customer Reviews</h2>
+    <div className="container-sm">
+      <div className="container-lg p-3 mb-2 bg-info-subtle text-info-emphasis text-start text-sm-center">
+        <h2 className="text-warning fw-bold">Customer Reviews</h2>
+      </div>
+
       <div className="reviews-container">
         {ratings.map((rating) => (
           <div className="each-review" key={rating.id}>
