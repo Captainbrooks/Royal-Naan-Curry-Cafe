@@ -85,34 +85,20 @@ const {foodtype,handleDelete}=useHandleDelete(data);
 
 
   return (
- <div className="container">
-      <div className="container starter-title">
-        <h1 className="text-warning">Starter Menus</h1>
+ <div className="container-xl">
+      <div className="container-fluid p-1 mb-2 bg-body-secondary text-start text-md-center">
+        <h1 className="text-warning fw-bold fs-2">Starter Menus</h1>
       </div>
 
-      <div className="container">
+      <div className="container-xl custom-eachfood d-flex flex-wrap">
         {foodtype.length > 0 ?
           foodtype.map((starter) => (
-            // <div className="each-starter" key={starter.id}>
-            //   <div className="image">
-            //   <img src={starter.imgUrl} alt="starter" className="starter" />
-            //   </div>
-            //   <div className="starter-info">
-            //   <h3 className="text-danger" style={{ fontWeight: "550" }}>
-            //     {starter.name}
-            //   </h3>
-         
-            //   <p className="text-secondary">{starter.description}</p>
-            //   </div>
 
-            // 
-            // </div>
+            <div className="col-sm-12 col-md-6 col-lg-4 custom-eachfood  p-2" >
 
-
-            <div className="each-starter" >
-              <div class="card starter-food-container" style={{ width: "18rem" ,height:"400px"}} key={starter.id}>
-                <img class="card-img-top" src={starter.imgUrl} alt="starter item" height={"200px"} style={{ borderRadius: "50%" }} />
-                <div class="card-body" style={{textAlign:"center"}}>
+<div class="card" style={{ width: "18rem"}} key={starter.id}>
+                <img class="card-img-top" src={starter.imgUrl} alt="starter item" height={"200rem"} style={{ borderRadius: "50%" }} />
+                <div class="card-body text-center">
                   <h3 class="card-title text-warning">{starter.name}</h3>
                      <span className="text-muted">${starter.price}</span>
                   <p class="card-text text-dark">{starter.description}</p>
@@ -126,6 +112,7 @@ const {foodtype,handleDelete}=useHandleDelete(data);
                   }
                 </div>
               </div>
+        
             </div>
           )):
 

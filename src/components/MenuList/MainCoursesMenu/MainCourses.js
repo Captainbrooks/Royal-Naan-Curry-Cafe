@@ -178,10 +178,10 @@ function MainCourses() {
 
 
   return (
-    <div className="main-courses">
-      <div className="container-fluid">
-        <h1 className="text-warning">Main Courses</h1>
-      </div>
+    <div className="container-xl">
+    <div className="container-fluid p-1 mb-2 bg-body-secondary text-center">
+      <h1 className="text-warning fw-bold fs-2">Main Courses</h1>
+    </div>
 
 
 

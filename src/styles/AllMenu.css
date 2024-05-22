@@ -1,274 +1,65 @@
-.menu-items {
-    border: 1px solid green;
-
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-
-}
-
-#starters{
-    border:1px solid red;
-}
-
-#main-courses{
-    border: 1px solid red;
-}
-
-#traditional-breads{
-    border:1px solid red;
-}
-
-#drink-menus{
-    border:1px solid red;
-}
-
-#desert-menus{
-    border:1px solid red;
-}
-
-
-.starter-title{
-    /* display: flex;
-    justify-content: start !important; */
-}
-
-
-.starter-menus{
-    border: 1px solid brown;
-
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-
-    padding: 10px;
-
-  
-}
-
-
-
-
-.starter-food-container{
-
-
-    border: 1px solid brown;
- 
-}
-.starter-food-container:hover{
-
-    background-color: #f5f1f1ea;
- 
-}
-
-.each-starter{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
- 
-    margin:5px;
-    border: 1px solid brown;
- 
-}
-
-.starter-info{
-    padding: 5px;
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-}
-
-
-
-
-.container {
-  
-}
-
-
-.border-container {
-    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+.sidebar {
+     height:50vh;
+    position: sticky;
+   top:20rem;
+    border-right: 0.1rem solid rgba(140, 136, 136, 0.438);
 } 
 
- .container-fluid {
-    display: flex;
-    padding-top: 20px;
-    padding-left: 50px;
-    justify-content: flex-start;
-    margin-top: 50px 0 30px;
-}
-
-/* .title {} */
-
-
-.container {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-
-
-
-    margin-bottom: 30px;
-    margin-top: 30px;
-
-
-
-    justify-content: center;
-    align-items: center;
-
-
-
-}
-
-
-
-.each-starter button:hover {
-    background-color: orange;
-    color: white;
-}
-
-
-
-.starter,
-.breads,
-.drink {
-    max-width: 400px;
-    width: 100%;
-    height: 180px;
-    border-radius: 50%;
-    margin-bottom: 30px;
-}
-
-.title-menu {
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-}
-
-.veg-items,
-.chicken-items,
-.mutton-items,
-.bread-items,
-.drink-items {
-    border-radius: 20px;
-    text-align: center;
-    padding: 20px;
-    box-shadow: 0 0 2px rgba(0, 0, 0, 0.1);
-
-    width: 30%;
-    margin: 25px 18px;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-}
-
-
-.beverage {
-    border-radius: 20px;
-    text-align: center;
-    padding: 5px;
-    box-shadow: 0 0 2px rgba(0, 0, 0, 0.1);
-
-    width: 20%;
-    margin: 25px 25px;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-}
-
-
-
-
-.veg-items:hover,
-.chicken-items:hover,
-.mutton-items:hover,
-.bread-items:hover,
-.drink-items:hover,
-.beverage:hover {
-    background-color: #f5f1f1ea;
-}
-
-.veg-items button,
-.chicken-items button,
-.mutton-items button,
-.bread-items button,
-.drink-items button,
-.beverage button {
-    max-width: 300px;
-    border-radius: 20px;
-}
-
-
-
-
-
-/* css for sidebar logic */
-
-
-.menu-page-container {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: flex-start;
-    position: relative;
-    /* padding: 100px; */
-}
-
-.sidebar {
-    margin-left: 10px;
-    width: 20%;
-     height: 50vh;
-    position: -webkit-sticky;
-    position: sticky;
-    top: 100px; 
-
-    margin-top: 20px;
-    margin-bottom: 50px;
-    /* box-shadow: 0 4px 8px rgba(0, 0, 0, 0.185); */
-
-    border-right: 2px solid rgba(140, 136, 136, 0.438);
-
-
-
-
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    align-items: center;
-
-
-
-
-}
-
-.sidebar .text-muted{
-    font-weight: bold;
-    padding: 10px;
-    cursor: pointer;
-
-}
 .sidebar-tracking{
     background-color:rgba(255, 166, 0, 0.287);
-    border-radius: 20px;
-}
-.sidebar-tracking:hover{
-    background-color:rgba(255, 166, 0, 0.287);
-    border-radius: 20px;
+    border-radius: 1.5rem;
 }
 
-.sidebar-head{
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-end;
-}
+/* sidebar end */
 
-.sidebar-body{
+
+
+
+
+
+.custom-eachfood{
+    width: 100%;
+    margin-bottom: 0.5rem;
+
+
     display: flex;
-    flex-direction: column;
     justify-content: space-around;
 }
 
-.menu-items {
-    flex: 1; /* This allows the menu-items to take remaining space */
-    padding-left: 20px; /* Add some padding to separate the sidebar from menu-items */
-}
+
+/* AllMenu.css */
+@media (min-width: 578px) and (max-width: 767px) {
+    .custom-eachfood .col-lg-4 {
+      flex: 0 0 50%; /* Set width to 50% for medium screens */
+      max-width: 50%;
+    }
+  }
+  
+  /* For screens wider than 767px, revert back to col-lg-4 */
+  @media (min-width: 768px) {
+    .custom-eachfood .col-lg-4 {
+      flex: 0 0 33.333333%; /* Reset width to one-third for larger screens */
+      max-width: 33.333333%;
+    }
+  }
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
