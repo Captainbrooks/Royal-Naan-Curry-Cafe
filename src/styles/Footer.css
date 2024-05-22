@@ -5,21 +5,79 @@
     filter: brightness(-400%);
   }
   
-.reservations-icons {
-    margin-inline: 2rem;
+
+.icon{
+    margin: 0.75rem;
+    display: flex;
+    justify-content: space-between;
+    padding: 0.5rem;
 
 }
 
-.icons-box a {
-    color: #676464;
-    text-decoration: none;
+.contact-container{
+    font-size: 1rem;
 }
 
-.each-icon {
-    padding: 0.75rem;
-    margin-top: 1.5rem;
-    margin-bottom: 1.5rem;
+
+
+
+
+@media (max-width:400px){
+
+
+
+
+    .custom-input{
+        width: 100%;
+    }
+
+
+
+
+
+
+
+ 
 }
+
+
+.custom-input {
+    width: 100%;
+    padding: 1rem;
+border: 1px solid #9e9b9b;
+    border-radius: 20px;
+
+    font-size: 1rem;
+  }
+  
+  .subscribe-input-button {
+    width: 70%;
+    margin-top: 1rem;
+    border-radius: 20px;
+    color: white;
+    border: none;
+    padding: 0.5rem 0;
+    text-align: center;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 1rem;
+ 
+  }
+  
+  .subscribe-input-button:hover {
+    background-color: orange;
+    color: white;
+  }
+  
+
+
+.subscribe-box{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
 
 .subscribe {
     display: flex;
@@ -35,32 +93,16 @@
     justify-content: center;
 }
 
-.subcribe-input-box {
-    display: flex;
-    width: 65%;
-    margin-top: 2.5rem;
-    padding: 0.75rem 1.5rem;
-    border: 2px solid #ccc;
-    font-size:1rem;
-    outline: none;
-    border-radius:1.5rem;
-    transition: border-color 0.3s ease;
-    transition: background-color 0.3s ease;
-}
 
-.subcribe-input-box:focus {
-    border-color: #007bff;
-}
+
 
 .subcribe-input-button {
     border: none;
     outline: none;
     background-color: rgba(255, 136, 0, 0.96);
-    width: 50%;
-    margin-top: 1.5rem;
-    margin-bottom: 1.5rem;
-    padding: 0.5rem;
-    border-radius: 1.5rem;
+
+
+    border-radius:20px;
     color: white;
     font-size: 1rem;
     font-weight: bold;
@@ -74,4 +116,11 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+}
+
+
+.custom-footer{
+    background-color:#eaeaea;
+    padding-top: 0.75rem;
+
 }

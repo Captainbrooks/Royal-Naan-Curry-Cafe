@@ -7,10 +7,10 @@ import Beverages from "./Beverages";
 function DrinkMenu() {
 
       return (
-        <div className="traditional-breads-menu">
-          <div className="container-fluid">
-            <h1 className="text-warning">Drinks Menu</h1>
-          </div>
+        <div className="container-xl">
+        <div className="container-fluid p-1 mb-2 bg-body-secondary text-center">
+          <h1 className="text-warning fw-bold fs-2">Drinks</h1>
+        </div>
 
          <SoftDrinks/>
 

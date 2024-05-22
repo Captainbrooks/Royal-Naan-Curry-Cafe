@@ -21,34 +21,50 @@ function VegMainCourses() {
     const {foodtype,handleDelete}=useHandleDelete(data);
     
   return (
- <div className="veg-maincourses">
-     <div className="container">
-        <h1 className="text-secondary" style={{padding:"10px",borderRadius:"20px"}}>Veg Items</h1>
-      </div>
+    <div className="container-xl">
+<div className="p-2 my-4 bg-body">
+  <h5 className='text-body-secondary fw-bolder h3' style={{textShadow: "1px 1px 2px rgba(0,0,0,0.5)"}}>Veg Items</h5>
+</div>
 
-      {/*  veg main courses */}
-      <div className="container border-container">
-        {foodtype &&
-          foodtype.map((veg) => (
-            <div className="veg-items" key={veg.id}>
-              <img src={veg.imgUrl} alt="starter" className="starter" />
-              <h3 className="text-danger" style={{ fontWeight: "550" }}>
-                {veg.name}
-              </h3>
-              <span className="text-muted">{veg.price}</span>
-              <p className="text-dark">{veg.description}</p>
-              {
-                isAdmin ? 
-                <div className="admin-control">
-                <button className="btn btn-danger" onClick={()=>handleDelete(veg._id)} style={{borderRadius:"20px"}}>Delete</button>
-                 </div>:
-                 (<Link to="/order-online"><button className="text-dark btn btn-warning" onClick={()=>dispatch(AddToCartArray(veg))} style={{borderRadius:"20px"}}>Order Now</button></Link>)
-               
-              }
+
+
+
+    <div className="container-xl custom-eachfood d-flex flex-wrap">
+      {foodtype.length > 0 ?
+        foodtype.map((veg) => (
+
+          <div className="col-sm-12 col-md-6 col-lg-4 custom-eachfood  p-2" >
+
+<div class="card" style={{ width: "18rem"}} key={veg.id}>
+              <img class="card-img-top" src={veg.imgUrl} alt="veg item" height={"200rem"} style={{ borderRadius: "50%" }} />
+              <div class="card-body text-center">
+                <h3 class="card-title text-warning">{veg.name}</h3>
+                   <span className="text-muted">${veg.price}</span>
+                <p class="card-text text-dark">{veg.description}</p>
+                {
+                  isAdmin ?
+                    <div className="admin-control">
+                      <button className="btn btn-danger" onClick={() => handleDelete(veg._id)} style={{ borderRadius: "20px" }}>Delete</button>
+                    </div> :
+                    (<Link to="/order-online"><button className="text-dark btn btn-warning" onClick={() => dispatch(AddToCartArray(veg))} style={{ borderRadius: "20px" }}>Order Now</button></Link>)
+
+                }
+              </div>
             </div>
-          ))}
+      
           </div>
- </div>
+        )):
+
+        (<div>
+          <h4 className='text-muted'>No Starter Items</h4>
+          { isAdmin &&
+            <Link to="/add-food"> <button className='btn btn-primary'>Add Starter Items</button></Link> 
+          }
+          </div>)
+      }
+
+    </div>
+</div>
   )
 }
 

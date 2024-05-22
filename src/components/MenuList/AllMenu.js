@@ -47,22 +47,26 @@ function AllMenu() {
     };
   }, []);
 
+  
+
   return (
-    <div className="menu-page-container">
-      <div className="sidebar">
-        <div className="sidebar-head">
-          <h3 className="text-warning">Menus</h3>
+    <div className="container-fluid  my-3 d-flex">
+        <div className="container-fluid">
+<div className="row">
+      <div className="col-md-3 sidebar text-muted fw-bold d-none d-md-block d-flex justify-content-center">
+        <div className="container text-center">
+          <h3 className="text-warning fw-bold">Menus</h3>
         </div>
-        <div className="sidebar-body">
-          <h6 className={`text-muted ${section === 'starters' ? 'sidebar-tracking' : ''}`} onClick={() => scrollToSection("starters")}>Starter Menus</h6>
-          <h6 className={`text-muted ${section === 'main-courses' ? 'sidebar-tracking' : ''}`} onClick={() => scrollToSection("main-courses")}>Main Courses</h6>
-          <h6 className={`text-muted ${section === 'traditional-breads' ? 'sidebar-tracking' : ''}`} onClick={() => scrollToSection("traditional-breads")}>Traditional Breads</h6>
-          <h6 className={`text-muted ${section === 'drink-menus' ? 'sidebar-tracking' : ''}`} onClick={() => scrollToSection("drink-menus")}>Drinks Menus</h6>
-          <h6 className={`text-muted ${section === 'desert-menus' ? 'sidebar-tracking' : ''}`} onClick={() => scrollToSection("desert-menus")}>Desert</h6>
+        <div className="container p-3 d-flex flex-column">
+          <h6 className={`text-muted mb-2 fw-bold p-2 text-center ${section === 'starters' ? 'sidebar-tracking' : ''}`} onClick={() => scrollToSection("starters")}>Starter Menus</h6>
+          <h6 className={`text-muted mb-2 fw-bold p-2 text-center ${section === 'main-courses' ? 'sidebar-tracking' : ''}`} onClick={() => scrollToSection("main-courses")}>Main Courses</h6>
+          <h6 className={`text-muted mb-2 fw-bold p-2 text-center ${section === 'traditional-breads' ? 'sidebar-tracking' : ''}`} onClick={() => scrollToSection("traditional-breads")}>Traditional Breads</h6>
+          <h6 className={`text-muted mb-2 fw-bold p-2 text-center ${section === 'drink-menus' ? 'sidebar-tracking' : ''}`} onClick={() => scrollToSection("drink-menus")}>Drinks Menus</h6>
+          <h6 className={`text-muted mb-2 fw-bold p-2 text-center ${section === 'desert-menus' ? 'sidebar-tracking' : ''}`} onClick={() => scrollToSection("desert-menus")}>Desert</h6>
         </div>
       </div>
 
-      <div className="menu-items">
+      <div className="col-md-9  px-0 py-2">
           <div id="starters">
             <StarterMenus/>
           </div>
@@ -78,6 +82,8 @@ function AllMenu() {
           <div id="desert-menus">
           <Deserts/>
           </div>
+        </div>
+        </div>
         </div>
     </div>
   );
