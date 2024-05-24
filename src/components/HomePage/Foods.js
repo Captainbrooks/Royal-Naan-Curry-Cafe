@@ -34,7 +34,7 @@ const foods=[
 
   return (
   <div className="container-md text-md-center">
-    <div class="container-lg p-3 mb-2 mt-5 bg-info-subtle text-info-emphasis text-start text-sm-center">
+    <div class="container-lg p-3 mb-2 mt-5  text-info-emphasis text-start text-sm-center">
     <h2 className="text-warning fw-bold">Food Gallery</h2>
     </div>
 

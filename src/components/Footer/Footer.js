@@ -94,12 +94,13 @@ function Footer() {
 
           <div className="mt-4 d-flex justify-content-center">
             <div className="w-75 ">
-              <input
+              <input   
                 type="email"
-                className="form-control custom-input mb-2 p-3"
+                className="form-control custom-input mb-2 p-4"
                 id="exampleInputEmail1"
                 aria-describedby="emailHelp"
                 placeholder="Enter your email"
+              
               />
               <button className="subscribe-input-button btn btn-warning">
                 Subscribe
