@@ -2,8 +2,8 @@ import React, { useState } from "react";
 import "../../styles/Reservation.css";
 
 function ReservationForm() {
-  const startHour = 14; // 2 PM in 24-hour format
-  const endHour = 22; // 10 PM in 24-hour format
+  const startHour = 14; 
+  const endHour = 22; 
 
  
   const options = [];
@@ -93,11 +93,14 @@ setMessage(null);
 
 
   return (
-    <div className="reservation-form">
-      <div className="form-container">
-        <h1 className="text-warning">Book a Reservation</h1>
+    <div className="container-lg d-flex flex-column justify-content-center align-items-center">
+<div className="title">
+        <h1 className="text-warning my-5">Book a Reservation</h1>
+        </div>
 
-        <form onSubmit={handleReservations} className="form">
+
+<div className="container-md d-flex justify-content-center">
+        <form onSubmit={handleReservations} className="form mb-5">
           <div class="form-group">
             <label>Name</label>
             <input
@@ -157,32 +160,26 @@ setMessage(null);
           </div>
 
           <button
-            className="btn btn-success text-white"
-            style={{
-              padding: "10px",
-              borderRadius: "20px",
-              fontWeight: "bold",
-            }}
-          >
+            className="btn btn-success text-white">
             Submit
           </button>
+          </form>
 
 
 
 
           <div className="d-flex justify-content-center align-items-end" style={{height:"50px"}}>
     <div className='error'>
- {error && <h4 className='text-danger'>{error}</h4>}
+ {error && <h6 className='text-danger'>{error}</h6>}
  </div>
  {message &&
  
     <h3 className='text-success'>{message}</h3>
-
-   
     }
  </div>
-        </form>
-      </div>
+     
+        </div>
+   
     </div>
   );
 }

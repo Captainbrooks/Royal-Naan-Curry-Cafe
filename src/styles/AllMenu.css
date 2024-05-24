@@ -1,7 +1,7 @@
 .sidebar {
      height:50vh;
     position: sticky;
-   top:20rem;
+   top:15rem;
     border-right: 0.1rem solid rgba(140, 136, 136, 0.438);
 } 
 

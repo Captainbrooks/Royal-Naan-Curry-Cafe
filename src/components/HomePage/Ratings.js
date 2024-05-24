@@ -63,7 +63,7 @@ function Ratings() {
 
   return (
     <div className="container-sm">
-      <div className="container-lg p-3 mb-2 bg-info-subtle text-info-emphasis text-start text-sm-center">
+      <div className="container-lg p-3 mb-2  text-info-emphasis text-start text-sm-center">
         <h2 className="text-warning fw-bold">Customer Reviews</h2>
       </div>
 

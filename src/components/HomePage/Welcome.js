@@ -12,7 +12,7 @@ function Welcome() {
   return (
     <div className="container p-2 custom-welcome">
       <div className="welcome">
-        <h1 class="text-danger font-weight-bold text-center my-4">
+        <h1 class="text-warning font-weight-bold text-center my-4">
           Welcome to Royal Naan Curry <br /> & <br /> Cafe
         </h1>
 
