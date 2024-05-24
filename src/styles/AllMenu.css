@@ -20,12 +20,22 @@
 .custom-eachfood{
     width: 100%;
     margin-bottom: 0.5rem;
-
-
     display: flex;
     justify-content: space-around;
 }
 
+.custom-eachfood {
+  transition: transform 0.5s ease-in-out;
+}
+
+.custom-eachfood:hover {
+  transform: scale(1.03);
+}
+
+.custom-card:hover{
+
+  background-color:#f9f9f9e5;
+}
 
 /* AllMenu.css */
 @media (min-width: 578px) and (max-width: 767px) {
@@ -42,7 +52,45 @@
       max-width: 33.333333%;
     }
   }
-  
+
+
+
+
+
+
+
+
+
+
+  /* Search Bar */
+
+  .custom-searchbar{ /* Set search bar position to fixed */
+    /* Align search bar to the top of the viewport */
+    width: 100%;
+
+ padding-bottom: 20px;
+     /* Make search bar container full width */
+
+     box-shadow: 0 2px 4px rgba(137, 136, 136, 0.1);
+
+  }
+
+
+  .custom-searchbar {
+
+
+      z-index: 1000;
+    
+    
+
+
+    height:10vh;
+   position: sticky;
+  top:9rem;
+   border-right: 0.1rem solid rgba(140, 136, 136, 0.438);
+}
+
+
 
 
 

@@ -26,13 +26,13 @@ function MuttonMainCourses() {
     
     
     
-        <div className="container-xl custom-eachfood d-flex flex-wrap">
+        <div className="container-xl d-flex flex-wrap">
           {foodtype.length > 0 ?
             foodtype.map((mutton) => (
     
               <div className="col-sm-12 col-md-6 col-lg-4 custom-eachfood  p-2" >
     
-    <div class="card" style={{ width: "18rem"}} key={mutton.id}>
+    <div class="card custom-card" style={{ width: "18rem"}} key={mutton.id}>
                   <img class="card-img-top" src={mutton.imgUrl} alt="mutton item" height={"200rem"} style={{ borderRadius: "50%" }} />
                   <div class="card-body text-center">
                     <h3 class="card-title text-warning">{mutton.name}</h3>

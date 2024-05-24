@@ -179,7 +179,7 @@ function MainCourses() {
 
   return (
     <div className="container-xl">
-    <div className="container-fluid p-1 mb-2 bg-body-secondary text-center">
+    <div className="container-fluid p-1 mb-2 text-center">
       <h1 className="text-warning fw-bold fs-2">Main Courses</h1>
     </div>
 

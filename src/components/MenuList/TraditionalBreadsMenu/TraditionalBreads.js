@@ -85,17 +85,17 @@ function TraditionalBreads() {
   // ];
   return (
     <div className="container-xl">
-    <div className="container-fluid p-1 mb-2 bg-body-secondary text-start text-md-center">
+    <div className="container-fluid p-1 mb-2  text-start text-md-center">
       <h1 className="text-warning fw-bold fs-2">Traditional Breads</h1>
     </div>
 
-    <div className="container-xl custom-eachfood d-flex flex-wrap">
+    <div className="container-xl d-flex flex-wrap">
       {foodtype.length > 0 ?
         foodtype.map((bread) => (
 
           <div className="col-sm-12 col-md-6 col-lg-4 custom-eachfood  p-2" >
 
-<div class="card" style={{ width: "18rem"}} key={bread.id}>
+<div class="card custom-card" style={{ width: "18rem"}} key={bread.id}>
               <img class="card-img-top" src={bread.imgUrl} alt="bread item" height={"200rem"} style={{ borderRadius: "50%" }} />
               <div class="card-body text-center">
                 <h3 class="card-title text-warning">{bread.name}</h3>

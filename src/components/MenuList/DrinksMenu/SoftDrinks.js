@@ -24,13 +24,13 @@ function SoftDrinks() {
         <h5 className='text-body-secondary fw-bolder h3' style={{ textShadow: "1px 1px 2px rgba(0,0,0,0.5)" }}>Soft Drinks</h5>
       </div>
 
-      <div className="container-xl custom-eachfood   d-flex flex-wrap">
+      <div className="container-xl d-flex flex-wrap">
         {foodtype.length > 0 ?
           foodtype.map((drink) => (
 
             <div className="col-sm-12 col-md-6 col-lg-4 custom-eachfood  p-2" >
 
-              <div class="card" style={{ width: "18rem" }} key={drink.id}>
+              <div class="card custom-card" style={{ width: "18rem" }} key={drink.id}>
                 <img class="card-img-top" src={drink.imgUrl} alt="drink item" height={"200rem"} style={{ borderRadius: "50%" }} />
                 <div class="card-body text-center">
                   <h3 class="card-title text-warning">{drink.name}</h3>

@@ -18,7 +18,7 @@ import { Link } from "react-router-dom";
 
 function Footer() {
   return (
-    <div className="container-fluid custom-footer">
+    <div className="container-fluid pt-5 custom-footer">
       <div className="container">
         <div className="row">
       
@@ -30,7 +30,7 @@ function Footer() {
                 alt="Restaurant Logo"
               />
             </Link>
-            <h6 className="text-secondary text-center text-sm-center ">
+            <h6 className="text-white text-center text-sm-center ">
               Royal Naan Curry & Bar serves Indian contemporary cuisine with
               coffee and drinks
             </h6>
@@ -41,7 +41,7 @@ function Footer() {
             <div className="container">
               <Link
                 to="tel:+437-477-6100"
-                className="link text-muted text-decoration-none h6 justify-content-center icon-container"
+                className="link text-white text-decoration-none h6 justify-content-center icon-container"
               >
                 <div className="icon">
                   <FontAwesomeIcon className="reservations-icons" icon={faPhoneAlt} />
@@ -50,7 +50,7 @@ function Footer() {
               </Link>
               <Link
                 to="mailto:royalcurry010@gmail.com"
-                className="link text-muted text-decoration-none h6 justify-content-center icon-container"
+                className="link text-white text-decoration-none h6 justify-content-center icon-container"
               >
                 <div className="icon">
                   <FontAwesomeIcon className="reservations-icons" icon={faEnvelope} />
@@ -61,7 +61,7 @@ function Footer() {
                 to="https://www.google.com/maps/place/17+Oakridge+Dr,+Scarborough,+ON+M1M+2A5/@43.7267291,-79.2450703,17z/data=!3m1!4b1!4m6!3m5!1s0x89d4cfcc8860319d:0x9d6d3e86c6bebd9e!8m2!3d43.7267253!4d-79.2424954!16s%2Fg%2F11c1j11y31?entry=ttu"
                 target="_blank"
                 rel="noreferrer"
-                className="link text-muted text-decoration-none icon-container"
+                className="link text-white text-decoration-none icon-container"
               >
                 <div className="icon">
                   <FontAwesomeIcon className="reservations-icons" icon={faHome} />
@@ -72,7 +72,7 @@ function Footer() {
                 to="https://www.google.com/maps/place/17+Oakridge+Dr,+Scarborough,+ON+M1M+2A5/@43.7267291,-79.2450703,17z/data=!3m1!4b1!4m6!3m5!1s0x89d4cfcc8860319d:0x9d6d3e86c6bebd9e!8m2!3d43.7267253!4d-79.2424954!16s%2Fg%2F11c1j11y31?entry=ttu"
                 target="_blank"
                 rel="noreferrer"
-                className="link text-muted text-decoration-none h6 icon-container"
+                className="link text-white text-decoration-none h6 icon-container"
               >
                 <div className="icon">
                   <FontAwesomeIcon className="reservations-icons" icon={faMapMarkerAlt} />
@@ -86,7 +86,7 @@ function Footer() {
         <div className="container-lg mt-4 text-center">
           <div className="container-fluid p-3">
             <h3 className="text-warning">Subscribe To Know Latest Offers</h3>
-            <span className="text-muted">
+            <span className="text-white">
               Subscribe to our newsletter and receive the latest updates & offers
               from Royal Naan Curry & Bar.
             </span>
@@ -127,7 +127,7 @@ function Footer() {
 
           <div className="copyrightinfo">
             <span>
-              <h6 className="text-muted">&copy; All rights reserved. Designed by Milton Gaire</h6>
+              <h6 className="text-white">&copy; All rights reserved. Designed by Milton Gaire</h6>
             </span>
           </div>
         </div>
