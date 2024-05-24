@@ -2,7 +2,7 @@
 /* Default for screens smaller than 576px */
 .restro-logo {
     width: 60%;
-    filter: brightness(-400%);
+    filter: brightness(400%);
   }
   
 
@@ -50,7 +50,7 @@
 .custom-input {
     width: 100%;
     padding: 1rem;
-border: 1px solid #9e9b9b;
+border: 1px solid #c5c3c3;
     border-radius: 20px;
 
     font-size: 1rem;
@@ -116,6 +116,7 @@ border: 1px solid #9e9b9b;
 
 .social-media-icons {
     padding: 1rem;
+    color: white;
 }
 
 .footer-foot {
@@ -126,7 +127,7 @@ border: 1px solid #9e9b9b;
 
 
 .custom-footer{
-    background-color:#eaeaea;
+    background-color:#626262;
     padding-top: 0.75rem;
 
 }

@@ -33,7 +33,7 @@
 
 /* Hover effect for navbar links */
 .navbar-nav .nav-item .nav-link:hover {
-  background-color:rgb(82, 80, 80);
+  background-color:rgb(26, 20, 20);
   border-radius: 20px;
 }
 
@@ -47,4 +47,9 @@
 
 .toggle-icons{
   color: white;
+}
+
+
+.custom-navbar{
+  background-color:#3c3a3a;
 }

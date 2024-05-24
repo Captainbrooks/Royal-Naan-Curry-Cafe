@@ -36,7 +36,7 @@ function Navbar() {
   
 
   return (
-    <nav className="navbar navbar-expand-md sticky-top bg-secondary">
+    <nav className="navbar navbar-expand-md sticky-top  custom-navbar">
   <div className="container-md px-2 py-2">
     <div className="d-flex justify-content-between align-items-center w-100">
   <Link to="/"><img src={logo} className='logo-img' alt="" /></Link>

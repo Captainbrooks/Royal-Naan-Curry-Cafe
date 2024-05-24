@@ -6,6 +6,7 @@ import MainCourses from "./MainCoursesMenu/MainCourses";
 import TraditionalBreads from "./TraditionalBreadsMenu/TraditionalBreads";
 import DrinkMenu from "./DrinksMenu/DrinkMenu";
 import Deserts from "./DesertMenu/Deserts";
+import SearchBar from "./SearchBar";
 
 
 function AllMenu() {
@@ -50,7 +51,9 @@ function AllMenu() {
   
 
   return (
-    <div className="container-fluid  my-3 d-flex">
+<>
+  
+    <div className="container-fluid border border-danger d-flex">
         <div className="container-fluid">
 <div className="row">
       <div className="col-md-3 sidebar text-muted fw-bold d-none d-md-block d-flex justify-content-center">
@@ -66,7 +69,11 @@ function AllMenu() {
         </div>
       </div>
 
-      <div className="col-md-9  px-0 py-2">
+      <div className="col-md-9 mt-5  px-0 py-2">
+      {/* <div className="container-xxl mb-4 custom-searchbar">
+      <SearchBar/>
+    </div> */}
+
           <div id="starters">
             <StarterMenus/>
           </div>
@@ -86,6 +93,7 @@ function AllMenu() {
         </div>
         </div>
     </div>
+    </>
   );
 }
 

@@ -29,13 +29,13 @@ function VegMainCourses() {
 
 
 
-    <div className="container-xl custom-eachfood d-flex flex-wrap">
+    <div className="container-xl  d-flex flex-wrap">
       {foodtype.length > 0 ?
         foodtype.map((veg) => (
 
           <div className="col-sm-12 col-md-6 col-lg-4 custom-eachfood  p-2" >
 
-<div class="card" style={{ width: "18rem"}} key={veg.id}>
+<div class="card custom-card" style={{ width: "18rem"}} key={veg.id}>
               <img class="card-img-top" src={veg.imgUrl} alt="veg item" height={"200rem"} style={{ borderRadius: "50%" }} />
               <div class="card-body text-center">
                 <h3 class="card-title text-warning">{veg.name}</h3>

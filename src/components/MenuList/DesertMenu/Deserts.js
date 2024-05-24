@@ -43,17 +43,17 @@ function Deserts() {
     //   ]
   return (
     <div className="container-xl">
-    <div className="container-fluid p-1 mb-2 bg-body-secondary text-start text-md-center">
+    <div className="container-fluid p-1 mb-2 text-start text-md-center">
       <h1 className="text-warning fw-bold fs-2">Desert</h1>
     </div>
 
-    <div className="container-xl custom-eachfood   d-flex flex-wrap">
+    <div className=" container-xl d-flex flex-wrap">
       {foodtype.length > 0 ?
         foodtype.map((starter) => (
 
           <div className="col-sm-12 col-md-6 col-lg-4 custom-eachfood  p-2" >
 
-<div class="card" style={{ width: "18rem"}} key={starter.id}>
+<div class="card custom-card" style={{ width: "18rem"}} key={starter.id}>
               <img class="card-img-top" src={starter.imgUrl} alt="starter item" height={"200rem"} style={{ borderRadius: "50%" }} />
               <div class="card-body text-center">
                 <h3 class="card-title text-warning">{starter.name}</h3>

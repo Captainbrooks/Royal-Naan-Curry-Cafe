@@ -5,7 +5,7 @@ const About = () => {
   return (
     <div className="container p-3">
       <div class="container-lg p-3 mb-2  text-info-emphasis text-start text-sm-center">
-      <h2 className="text-warning fw-bold text-md-center">About Royal Naan Curry & Cafe</h2>
+      <h3 className="text-warning fw-bold text-center">About Royal Naan Curry & Cafe</h3>
       </div>
 
 <div className="chef-info container col justify-content-center mb-5">
