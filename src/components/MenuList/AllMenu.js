@@ -53,7 +53,9 @@ function AllMenu() {
   return (
 <>
   
-    <div className="container-fluid border border-danger d-flex">
+    <div className="container-fluid ">
+
+
         <div className="container-fluid">
 <div className="row">
       <div className="col-md-3 sidebar text-muted fw-bold d-none d-md-block d-flex justify-content-center">
@@ -69,10 +71,9 @@ function AllMenu() {
         </div>
       </div>
 
-      <div className="col-md-9 mt-5  px-0 py-2">
-      {/* <div className="container-xxl mb-4 custom-searchbar">
-      <SearchBar/>
-    </div> */}
+      <div className="col-md-9  px-0 py-2 menu-items">
+
+
 
           <div id="starters">
             <StarterMenus/>
