@@ -73,8 +73,6 @@ function AllMenu() {
 
       <div className="col-md-9  px-0 py-2 menu-items">
 
-
-
           <div id="starters">
             <StarterMenus/>
           </div>

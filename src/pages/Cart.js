@@ -96,12 +96,20 @@ useEffect(()=>{
     return (
         <div>
             <Navbar />
-            <div className="cart-page">
-                <div className=".bg-light cart">
-                    <h1 className="text-warning" style={{ display: cart.length > 0 ? 'block' : 'none'}}>Items in the Cart</h1>
+            <div className="container-fluid ">
+ 
+            <h1 className="text-warning my-4 text-center" style={{ display: cart.length > 0 ? 'block' : 'none'}}>Items in the Cart</h1>
+
+            <div className="container-xl border border-danger d-flex flex-column justify-content-">
+
+             
+
+
+
+        
                     {cart.length > 0 ? (
-                        
-                        <div className="cart-container">
+                           <div className="row">
+                        <div className="col-md-8 border border-danger">
                             {cart.map((c) => (
 
                             
@@ -127,25 +135,11 @@ useEffect(()=>{
  <div className="redirect-button"><Link to="/order-online"> <button className='btn btn-warning' style={{marginBottom:"20px",marginTop:"20px"}}>Add More Food Items To Cart</button></Link></div> 
                             
                         </div>
-                       
-                        
-                    ) : (
-                        <div className="empty-cart" style={{ display: "flex", justifyContent: "center", alignItems: "center"}}>
-                            <div className="cart-info">
-                              <div className="empty-cart-logo"><img src={emptyCart} alt="empty cart" height={'50%'} width={"50%"} /></div> 
-                              <h1 className='text-secondary' style={{ marginTop: "30px",marginBottom:"20px" ,display:'flex',justifyContent:'center',alignItems:'center'}}>No Items Found..</h1>
-                              <div className="redirect-button">  <Link to="/order-online"><button className='btn btn-warning text-white fw-bold' style={{marginBottom:"30px"}}>Add Food to Cart</button></Link></div>
-                            </div>
-                        </div>
-                    )}
-                </div>
 
 
-                {/* if items in the cart exists */}
 
 
-                {cart.length > 0 && (
-                    <div className="bill">
+                        <div className="col-md-4 border border-primary">
                         <div className="bill-info">
                             <h3 className='text-warning'>Your Order</h3>
 
@@ -204,7 +198,30 @@ useEffect(()=>{
 
                         </div>
                     </div>
-                )}
+                </div>
+
+
+
+
+                       
+                        
+                    ) : (
+                        <div className="empty-cart" style={{ display: "flex", justifyContent: "center", alignItems: "center"}}>
+                            <div className="cart-info">
+                              <div className="empty-cart-logo"><img src={emptyCart} alt="empty cart" height={'50%'} width={"50%"} /></div> 
+                              <h1 className='text-secondary' style={{ marginTop: "30px",marginBottom:"20px" ,display:'flex',justifyContent:'center',alignItems:'center'}}>No Items Found..</h1>
+                              <div className="redirect-button">  <Link to="/order-online"><button className='btn btn-warning text-white fw-bold' style={{marginBottom:"30px"}}>Add Food to Cart</button></Link></div>
+                            </div>
+                        </div>
+                    )}
+             
+
+
+                {/* if items in the cart exists */}
+
+
+         
+            </div>
             </div>
             <Footer />
         </div>
