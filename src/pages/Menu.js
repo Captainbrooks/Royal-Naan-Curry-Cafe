@@ -50,7 +50,7 @@ function Menu() {
 
     <div className="container-fluid fixed-container px-2">
       <div className="row mt-3">
-        <div className="col">
+        <div className="col-9 col-sm-8 col-md-6">
       <form>
   <div className="search">
     <span className="search-icon material-symbols-outlined">Search</span>
@@ -61,7 +61,7 @@ function Menu() {
 </div>
     
 
-<div className="col d-flex justify-content-center align-items-center">
+<div className="col-3 col-sm-4 col-md-6 d-flex justify-content-center align-items-center">
 <div className="cart-logo">
           {
              (<Link to="/cart"><div className="d-flex justify-content-center rounded-circle bg-secondary text-white"> {totalNumberOfItems}</div><FaShoppingCart  color="orange" size="2em"/>
