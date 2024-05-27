@@ -25,11 +25,11 @@ function ContactForm() {
     <div className="container-md d-flex flex-column justify-content-center align-items-center">
       <h1 className="text-warning my-5">Contact Us</h1>
 
-      <div className="container w-50 text-sm-start text-md-center">
+      <div className="container-fluid w-50 text-sm-start text-md-center">
 
         <Link
           to="tel:+437-477-6100"
-          className="link text-muted text-decoration-none h6 justify-content-center icon-container"
+          className="link text-muted text-decoration-none  justify-content-center icon-container"
         >
           <div className="icon d-flex justify-content-around">
             <FontAwesomeIcon className="reservations-icons d-none d-sm-block" icon={faPhoneAlt} />
@@ -39,7 +39,7 @@ function ContactForm() {
         </Link>
         <Link
           to="mailto:royalcurry010@gmail.com"
-          className="link text-muted text-decoration-none h6 justify-content-center icon-container"
+          className="link text-muted text-decoration-none justify-content-center icon-container"
         >
           <div className="icon d-flex justify-content-around">
             <FontAwesomeIcon className="reservations-icons d-none d-sm-block" icon={faEnvelope} />
