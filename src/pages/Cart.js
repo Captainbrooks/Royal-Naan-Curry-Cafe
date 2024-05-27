@@ -102,17 +102,11 @@ useEffect(()=>{
 
             <div className="container-xl border border-danger d-flex flex-column justify-content-">
 
-             
-
-
-
-        
+      
                     {cart.length > 0 ? (
                            <div className="row">
-                        <div className="col-md-8 border border-danger">
+                        <div className="col-9  border-danger">
                             {cart.map((c) => (
-
-                            
 
                                 <div className="cart-items" key={c._id}>
                                     <div className="cart-food-image">
@@ -120,6 +114,7 @@ useEffect(()=>{
                                         <div><h5 className='text-danger cart-food-info'>{c.name}</h5></div>
                                         <div><span className='text-dark cart-food-info'>{c.description}</span></div>
                                     </div>
+
                                     <div className="food-info">
                                         <div className="buttons">
                                             <button className=' text-customize .bg-body-secondary btn btn-light text-dark' onClick={() => dispatch(decreaseQuantity(c._id))}>-</button>
@@ -130,16 +125,13 @@ useEffect(()=>{
                                         <button className='btn btn-danger remove-btn' onClick={() => dispatch(removeFromCart(c._id))}>Remove</button>
                                     </div>
                                 </div>
-                                
+                
                             ))}
  <div className="redirect-button"><Link to="/order-online"> <button className='btn btn-warning' style={{marginBottom:"20px",marginTop:"20px"}}>Add More Food Items To Cart</button></Link></div> 
                             
                         </div>
 
-
-
-
-                        <div className="col-md-4 border border-primary">
+                        <div className="col border border-primary">
                         <div className="bill-info">
                             <h3 className='text-warning'>Your Order</h3>
 
