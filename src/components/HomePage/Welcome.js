@@ -9,6 +9,9 @@ function Welcome() {
   const user = useSelector(selectUser);
 
 
+  
+
+
   return (
     <div className="container p-2 custom-welcome">
       <div className="welcome">
@@ -20,6 +23,9 @@ function Welcome() {
         <p className='text-muted text-center text-md-left'>Contemporary Indian Cuisine with freshly local produce
           and constantly inventing creative platters
         </p>
+
+
+
 
 
         {user ?

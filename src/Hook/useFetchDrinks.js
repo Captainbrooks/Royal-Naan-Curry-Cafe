@@ -9,7 +9,7 @@ const useFetchDrinks = (endpoint) => {
     const fetchData = async () => {
       setIsLoading(true);
       try {
-        const response = await fetch(`http://https://royal-naan-curry-bar.onrender.com/api/v1/fooditem/DrinkMenus/${endpoint}`, {
+        const response = await fetch(`https://royal-naan-curry-bar.onrender.com/api/v1/fooditem/DrinkMenus/${endpoint}`, {
           method: 'GET'
         });
 
