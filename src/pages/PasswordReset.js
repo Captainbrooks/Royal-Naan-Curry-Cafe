@@ -44,7 +44,7 @@ function PasswordReset() {
 const handleSubmit=async(e)=>{
     e.preventDefault();
 
-    const response=await fetch(`http://localhost:4000/api/v1/user/reset-password/?email=${email}`,{
+    const response=await fetch(`http://https://royal-naan-curry-bar.onrender.com/api/v1/user/reset-password/?email=${email}`,{
         method:"POST",
         headers:{
             "Content-Type":"application/json"

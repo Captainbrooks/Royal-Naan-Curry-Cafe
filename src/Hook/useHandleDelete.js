@@ -26,7 +26,7 @@ const handleDelete=async(id)=>{
 
     setIsLoading(true);
 
-    const response=await fetch("http://localhost:4000/api/v1/fooditem/delete/"+id,{
+    const response=await fetch("http://https://royal-naan-curry-bar.onrender.com/api/v1/fooditem/delete/"+id,{
 
     method:"DELETE",
     headers:{
