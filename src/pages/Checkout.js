@@ -4,6 +4,7 @@ import { selectCart } from '../store/features/cartSlice';
 import "../styles/Checkout.css";
 import Navbar from '../components/Header/Navbar';
 import Footer from '../components/Footer/Footer';
+import Headroom from 'react-headroom';
 
 function Checkout() {
     const [expiry, setExpiry] = useState('');
@@ -55,7 +56,10 @@ function Checkout() {
 
     return (
         <>
-            <Navbar />
+        <Headroom>
+        <Navbar />
+        </Headroom>
+      
             <div className="container-fluid">
                 <h1 className='text-warning my-4 text-center'>Checkout</h1>
                 <div className="container-lg border d-flex flex-column justify-content-between">

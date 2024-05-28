@@ -11,6 +11,9 @@ import { useDispatch, useSelector } from 'react-redux';
 
 import { selectUser, logoutUser, selectIsAdmin } from '../../store/features/userSlice';
 import { selectCart } from '../../store/features/cartSlice';
+import Headroom from 'react-headroom';
+
+
 
 function Navbar() {
 
@@ -36,6 +39,9 @@ function Navbar() {
   
 
   return (
+
+
+
     <nav className="navbar navbar-expand-md sticky-top  custom-navbar">
   <div className="container-md px-2 py-2">
     <div className="d-flex justify-content-between align-items-center w-100">
@@ -69,6 +75,9 @@ function Navbar() {
 
 
 </nav>
+
+
+
   );
 }
 

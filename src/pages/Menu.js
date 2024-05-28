@@ -7,6 +7,7 @@ import { FaShoppingCart } from 'react-icons/fa';
 import { Link } from "react-router-dom";
 import { useDispatch, useSelector } from 'react-redux';
 import { selectCart } from "../store/features/cartSlice";
+import Headroom from "react-headroom";
 
 
 
@@ -39,16 +40,26 @@ function Menu() {
 
   return (
     <>
-    <Navbar />
-    
 
+
+    <Navbar />
+
+
+
+
+  
+  
     <div className="menu-page">
+
+    
 
     <div className="search-bar">
 
 
 
     <div className="container-fluid fixed-container px-2">
+
+
       <div className="row mt-3">
         <div className="col-9 col-sm-8 col-md-6">
       <form>

@@ -9,13 +9,13 @@ function Welcome() {
   const user = useSelector(selectUser);
 
 
-  
+
 
 
   return (
-    <div className="container p-2 custom-welcome">
-      <div className="welcome">
-        <h1 class="text-warning font-weight-bold text-center my-4">
+    <div className="container custom-welcome">
+      <div className="d-flex flex-column text-center">
+        <h1 class="text-warning font-weight-bold text-center">
           Welcome to Royal Naan Curry <br /> & <br /> Cafe
         </h1>
 

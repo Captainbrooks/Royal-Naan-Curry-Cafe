@@ -11,6 +11,9 @@ import { Link } from 'react-router-dom';
 import emptyCart from "../images/emptyshoppingcart.avif";
 import Checkout from './Checkout';
 import { selectUser } from '../store/features/userSlice';
+import Headroom from 'react-headroom';
+
+
 
 
 
@@ -88,7 +91,9 @@ function Cart() {
 
     return (
         <div>
-            <Navbar />
+
+<Navbar/>
+
             <div className="container-fluid ">
 
                 <h1 className="text-warning my-4 text-center" style={{ display: cart.length > 0 ? 'block' : 'none' }}>Items in the Cart</h1>

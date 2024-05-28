@@ -5,17 +5,23 @@ import Foods from "../components/HomePage/Foods";
 import About from "../components/HomePage/About";
 import Ratings from "../components/HomePage/Ratings";
 import Footer from "../components/Footer/Footer";
+import Headroom from 'react-headroom';
 
 function Home() {
   return (
-  <div className="home-page">
-     <Navbar/>
-     <Welcome/>
-    <Foods/>
-    <About/>
-    <Ratings/>
-    <Footer/> 
-  </div>
+    <div className="home-page">
+<Headroom>
+      <Navbar />
+
+      </Headroom>
+
+      
+      <Welcome />
+      <Foods />
+      <About />
+      <Ratings />
+      <Footer />
+    </div>
   )
 }
 
