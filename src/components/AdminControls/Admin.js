@@ -15,7 +15,7 @@ const handleIssue=async(e)=>{
 
 
     try {
-        const response=await fetch("http://https://royal-naan-curry-bar.onrender.com/api/v1/admin/issue",{
+        const response=await fetch("https://royal-naan-curry-bar.onrender.com/api/v1/admin/issue",{
             method:"POST",
             headers:{
                 "Content-Type":"application/json",

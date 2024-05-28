@@ -55,7 +55,7 @@ function ReservationForm() {
 
     console.log(data);
 
-    const response=await fetch("http://https://royal-naan-curry-bar.onrender.com/api/v1/reservations/add-reservations",{
+    const response=await fetch("https://royal-naan-curry-bar.onrender.com/api/v1/reservations/add-reservations",{
       method:"POST",
       headers:{
         "Content-Type":"application/json",

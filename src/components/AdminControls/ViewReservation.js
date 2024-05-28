@@ -20,7 +20,7 @@ function ViewReservation() {
 
     const markAsCompleted=async(id)=>{
 
-        const response=await fetch("http://https://royal-naan-curry-bar.onrender.com/api/v1/reservations/mark-complete/"+id,{
+        const response=await fetch("https://royal-naan-curry-bar.onrender.com/api/v1/reservations/mark-complete/"+id,{
             method:"PATCH",
             headers:{
                 "Content-Type":"application/json",
@@ -48,7 +48,7 @@ function ViewReservation() {
 
         const fetchReservations=async()=>{
         
-            const response=await fetch("http://https://royal-naan-curry-bar.onrender.com/api/v1/reservations",{
+            const response=await fetch("https://royal-naan-curry-bar.onrender.com/api/v1/reservations",{
                 method:"GET",
                 headers:{
                     "Authorization":`Bearer ${token}`
