@@ -77,7 +77,7 @@ console.log(data);
 
 
 try {
-    const response=await fetch("http://localhost:4000/api/v1/fooditem",{
+    const response=await fetch("http://https://royal-naan-curry-bar.onrender.com/api/v1/fooditem",{
         method:"POST",
         body:JSON.stringify(data),
         headers: {
