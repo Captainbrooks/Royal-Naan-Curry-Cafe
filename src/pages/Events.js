@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react';
 import Navbar from '../components/Header/Navbar';
 import Footer from '../components/Footer/Footer';
 import { Link } from 'react-router-dom';
+import Headroom from 'react-headroom';
 
 function Events() {
   const [noevents, setNoEvents] = useState(null);
@@ -35,7 +36,10 @@ function Events() {
 
   return (
     <div className="events-page">
+      <Headroom>
       <Navbar />
+      </Headroom>
+
 
       <div className="container-md d-flex flex-column justify-content-center align-items-center">
         <h1 className='text-warning mt-5 mb-5'>Active Events</h1>

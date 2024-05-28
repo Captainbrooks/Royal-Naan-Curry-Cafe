@@ -1,12 +1,8 @@
 .custom-welcome{
   font-size: 1rem;
+margin-top: 7rem;
 }
   
-  .welcome {
-    display: flex;
-    flex-direction: column;
-    text-align: center; 
-  }
 
   .order-online button {
     margin-top: 1.5rem;

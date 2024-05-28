@@ -1,5 +1,5 @@
 import { useSyncExternalStore } from 'react';
-import { BrowserRouter as Router, Routes, Route,Navigate} from "react-router-dom";
+import { BrowserRouter as Router, Routes, Route,Navigate,useLocation} from "react-router-dom";
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap/dist/js/bootstrap.bundle.min';
 
@@ -27,8 +27,18 @@ import ViewUsers from "./components/AdminControls/ViewUsers";
 import ForgotPassword from "./pages/forgotPassword";
 import PasswordReset from "./pages/PasswordReset";
 import Error from "./pages/Error";
+import Navbar from './components/Header/Navbar.js';
 
 
+function ScrollToTop() {
+  const { pathname } = useLocation();
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [pathname]);
+
+  return null;
+}
 
 function App() {
 
@@ -46,6 +56,7 @@ const isAdmin=useSelector(selectIsAdmin);
   return (
     <div className="App">
       <Router>
+      <ScrollToTop />
         <Routes>
           <Route path="/" element={<Home />}></Route>
           <Route path="/menu" element={<Menu/>}></Route>

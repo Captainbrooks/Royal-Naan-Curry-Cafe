@@ -8,11 +8,11 @@ const About = () => {
       <h3 className="text-warning fw-bold text-center">About Royal Naan Curry & Cafe</h3>
       </div>
 
-<div className="chef-info container col justify-content-center mb-5">
+<div className="chef-info container col justify-content-md-center mb-5">
   <div className="row">
       <div className="col-md-6 chef-image mb-5">
 
-      <img src={chef} class="img-fluid rounded-5" width={"100%"} alt="chef image"/>
+      <img src={chef} class="img-fluid rounded-5" width={"70%"}  alt="chef image"/>
       </div>
 
 <div className="col col-md-6 text-center d-flex align-items-center">
