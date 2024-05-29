@@ -100,7 +100,7 @@ setMessage(null);
 
 
 <div className="container-md d-flex justify-content-center">
-        <form onSubmit={handleReservations} className="form mb-5">
+        <form onSubmit={handleReservations} className="form d-flex flex-column mb-5">
           <div class="form-group">
             <label>Name</label>
             <input

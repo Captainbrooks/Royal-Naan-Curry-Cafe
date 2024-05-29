@@ -41,8 +41,8 @@ function Menu() {
   return (
     <>
 
-
     <Navbar />
+
 
 
 
@@ -85,17 +85,10 @@ function Menu() {
 
 </div>
 
-
-
-
-
-
-
-
-
-
-
 </div>
+
+
+
       
       <div className="menu-page-body">
       <AllMenu/>
