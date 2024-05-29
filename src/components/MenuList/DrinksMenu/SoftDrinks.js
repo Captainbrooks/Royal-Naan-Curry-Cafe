@@ -5,6 +5,7 @@ import { AddToCartArray } from '../../../store/features/cartSlice';
 import { Link } from 'react-router-dom';
 import useHandleDelete from '../../../Hook/useHandleDelete';
 import { selectIsAdmin } from '../../../store/features/userSlice';
+import LoadingSpinner from '../../../components/LoadingSpinner';
 
 function SoftDrinks() {
 
@@ -23,6 +24,12 @@ function SoftDrinks() {
       <div className="p-2 my-4 bg-body">
         <h5 className='text-body-secondary fw-bolder h3' style={{ textShadow: "1px 1px 2px rgba(0,0,0,0.5)" }}>Soft Drinks</h5>
       </div>
+
+      {isLoading ? (
+        <div className="text-center">
+          <LoadingSpinner />
+        </div>
+      ) : (
 
       <div className="container-xl d-flex flex-wrap">
         {foodtype.length > 0 ?
@@ -59,6 +66,7 @@ function SoftDrinks() {
         }
 
       </div>
+      )}
     </div>
   )
 }

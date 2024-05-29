@@ -5,6 +5,7 @@ import { AddToCartArray } from '../../../store/features/cartSlice';
 import { Link } from 'react-router-dom';
 import useHandleDelete from '../../../Hook/useHandleDelete';
 import { selectIsAdmin } from '../../../store/features/userSlice';
+import LoadingSpinner from '../../../components/LoadingSpinner';
 
 function CoffeeAndTea() {
 
@@ -23,7 +24,11 @@ function CoffeeAndTea() {
     </div>
     
     
-    
+    {isLoading ? (
+        <div className="text-center">
+          <LoadingSpinner />
+        </div>
+      ) : (
     
         <div className="container-xl d-flex flex-wrap">
           {foodtype.length > 0 ?
@@ -60,6 +65,8 @@ function CoffeeAndTea() {
           }
     
         </div>
+
+      )}
     </div>
   )
 }
