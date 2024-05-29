@@ -3,10 +3,12 @@ import Navbar from '../components/Header/Navbar';
 import Footer from '../components/Footer/Footer';
 import { Link } from 'react-router-dom';
 import Headroom from 'react-headroom';
+import LoadingSpinner from '../components/LoadingSpinner';
 
 function Events() {
   const [noevents, setNoEvents] = useState(null);
   const [events, setEvents] = useState([]);
+  const [isLoading, setIsLoading] = useState(true);
 
   useEffect(() => {
     fetchEvents();
@@ -18,6 +20,7 @@ function Events() {
     });
 
     const json = await response.json();
+    setIsLoading(false);
 
     if (response.ok) {
       if (json.events.length === 0) {
@@ -37,31 +40,36 @@ function Events() {
   return (
     <div className="events-page">
       <Headroom>
-      <Navbar />
+        <Navbar />
       </Headroom>
-
 
       <div className="container-md d-flex flex-column justify-content-center align-items-center">
         <h1 className='text-warning mt-5 mb-5'>Active Events</h1>
-        {events.length > 0 ? (
-          <div className='row'>
-            {events.map((ev) => (
-              <div className="col-12 col-sm-6 col-md-6 mb-4" key={ev._id}>
-                <div className="card h-100">
-                  <img className="card-img-top" src={ev.imgUrl} alt="Card image cap" style={{width: "100%", height: "200px", objectFit: "cover"}} />
-                  <div className="card-body">
-                    <h5 className="card-title">{ev.name}</h5>
-                    <p className="card-text">{ev.description}</p>
-                    <p className="card-text"><small className="text-muted">From: {new Date(ev.startTime).toLocaleString()}</small></p>
-                    <p className="card-text"><small className="text-muted">Until: {new Date(ev.endTime).toLocaleString()}</small></p>
-                    <Link to="/book-reservations"><button className="btn btn-primary">Register Now</button></Link>
-                  </div>
-                </div>
-              </div>
-            ))}
+        {isLoading ? (
+          <div className="text-center">
+            <LoadingSpinner />
           </div>
         ) : (
-          <div>{noevents}</div>
+          events.length > 0 ? (
+            <div className='row'>
+              {events.map((ev) => (
+                <div className="col-12 col-sm-6 col-md-6 mb-4" key={ev._id}>
+                  <div className="card h-100">
+                    <img className="card-img-top" src={ev.imgUrl} alt="Card image cap" style={{width: "100%", height: "200px", objectFit: "cover"}} />
+                    <div className="card-body">
+                      <h5 className="card-title">{ev.name}</h5>
+                      <p className="card-text">{ev.description}</p>
+                      <p className="card-text"><small className="text-muted">From: {new Date(ev.startTime).toLocaleString()}</small></p>
+                      <p className="card-text"><small className="text-muted">Until: {new Date(ev.endTime).toLocaleString()}</small></p>
+                      <Link to="/book-reservations"><button className="btn btn-primary">Register Now</button></Link>
+                    </div>
+                  </div>
+                </div>
+              ))}
+            </div>
+          ) : (
+            <div>{noevents}</div>
+          )
         )}
       </div>
 

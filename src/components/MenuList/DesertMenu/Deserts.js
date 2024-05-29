@@ -8,6 +8,7 @@ import { AddToCartArray } from '../../../store/features/cartSlice';
 import { Link } from 'react-router-dom';
 import useHandleDelete from '../../../Hook/useHandleDelete';
 import { selectIsAdmin } from '../../../store/features/userSlice';
+import LoadingSpinner from '../../../components/LoadingSpinner';
 
 function Deserts() {
 
@@ -47,6 +48,12 @@ function Deserts() {
       <h1 className="text-warning fw-bold fs-2">Desert</h1>
     </div>
 
+    {isLoading ? (
+        <div className="text-center">
+          <LoadingSpinner />
+        </div>
+      ) : (
+
     <div className=" container-xl d-flex flex-wrap">
       {foodtype.length > 0 ?
         foodtype.map((starter) => (
@@ -82,6 +89,7 @@ function Deserts() {
       }
 
     </div>
+      )}
 </div>
   )
 }
