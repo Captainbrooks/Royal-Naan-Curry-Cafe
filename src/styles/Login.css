@@ -1,31 +1,33 @@
-.login-page {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
+.custom-login{
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
 }
 
-form {
-
-    display: flex;
-    flex-direction: column;
+@media (max-width: 575px) {
+    .custom-login {
+        width: 90%; /* Below 576px, set width to 100% */
+    }
 }
 
-.container-form {
-    border: 2px solid #dededfdf;
-    max-width: max-content;
-    padding: 10px;
+@media (min-width: 576px) and (max-width: 768px) {
+    .custom-login {
+        width: 60%; /* Between 576px and 768px, set width to 60% */
+    }
 }
 
-.logo-style {
-    width: 20%;
-    height: 10%;
+@media (min-width: 769px) and (max-width: 991px) {
+    .custom-login {
+        width: 40%; /* Between 769px and 991px, set width to 40% */
+    }
 }
 
-.login-button {
-    margin-bottom: 15px;
+@media (min-width: 992px) {
+    .custom-login {
+        width: 30%; /* After 991px, set width to 30% */
+    }
 }
 
-.text-secondary {
-    margin-bottom: 10px;
-}
+
+
+
+
+

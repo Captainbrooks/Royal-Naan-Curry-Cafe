@@ -14,9 +14,14 @@ function AllMenu() {
 
   const scrollToSection = (sectionId) => {
     const sectionElement = document.getElementById(sectionId);
-
+    const navbarHeight = document.querySelector('.navbar').offsetHeight; // Adjust this according to your actual navbar class
+  
     if (sectionElement) {
-      sectionElement.scrollIntoView({ behavior: "smooth" });
+      const sectionPosition = sectionElement.offsetTop - navbarHeight;
+      window.scrollTo({
+        top: sectionPosition,
+        behavior: "smooth"
+      });
     }
   };
 
@@ -47,8 +52,6 @@ function AllMenu() {
       window.removeEventListener("scroll", handleScroll);
     };
   }, []);
-
-  
 
   return (
 <>

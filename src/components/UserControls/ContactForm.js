@@ -54,7 +54,7 @@ function ContactForm() {
 
       <div className="container-md d-flex justify-content-center">
 
-        <form className="form mb-4" onSubmit={handleSubmit}>
+        <form className="form d-flex flex-column mb-4" onSubmit={handleSubmit}>
           <div class="form-group">
             <label>Name</label>
             <input
