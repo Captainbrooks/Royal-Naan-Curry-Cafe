@@ -25,16 +25,16 @@ function StarterMenus() {
           <LoadingSpinner />
         </div>
       ) : (
-        <div className="container-xl d-flex flex-wrap">
+        <div className="container-fluid d-flex flex-wrap">
           {foodtype.length > 0 ? (
             foodtype.map((starter) => (
-              <div className="col-sm-12 col-md-6 col-lg-4 custom-eachfood p-2" key={starter.id}>
+              <div className="col-12 col-sm-6 col-md-6 col-lg-4 custom-eachfood p-2" key={starter.id}>
                 <div className="card custom-card" style={{ width: "18rem" }}>
-                  <img className="card-img-top" src={starter.imgUrl} alt="starter item" height={"200rem"} style={{ borderRadius: "50%" }} />
+                  <img className="card-img" src={starter.imgUrl} alt="starter item" height={"200rem"} style={{ borderRadius: "100%" }} />
                   <div className="card-body text-center">
-                    <h3 className="card-title text-warning">{starter.name}</h3>
-                    <span className="text-muted">${starter.price}</span>
-                    <p className="card-text text-dark">{starter.description}</p>
+                    <h4 className="card-title text-muted fw-bold">{starter.name}</h4>
+                    <span className="text-muted text-center">${starter.price}</span>
+                    <p className="card-text text-secondary text-center">{starter.description}</p>
                     {isAdmin ? (
                       <div className="admin-control">
                         <button className="btn btn-danger" onClick={() => handleDelete(starter._id)} style={{ borderRadius: "20px" }}>Delete</button>
