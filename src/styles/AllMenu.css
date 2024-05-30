@@ -101,7 +101,7 @@ height: 5rem;
   align-items: center;
   padding: var(--padding);
   border-radius: 2rem;
-  background-color: #dddada45;
+  background-color: #b2aeae5b;
   transition: box-shadow 0.25s;
 }
 
@@ -125,7 +125,13 @@ height: 5rem;
 
 .search-input::placeholder,
 .search-icon {
-  color: rgba(0, 0, 0, 0.5);
+  color: rgba(12, 10, 10, 0.76);
+}
+
+.outline-none {
+  outline: none;
+  border: none;
+  background-color: #e2dede00;
 }
 
 

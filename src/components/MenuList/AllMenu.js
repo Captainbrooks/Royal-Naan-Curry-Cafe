@@ -74,24 +74,32 @@ function AllMenu() {
         </div>
       </div>
 
-      <div className="col-md-9  px-0 py-2 menu-items">
 
-          <div id="starters">
-            <StarterMenus/>
-          </div>
-          <div id="main-courses">
-           <MainCourses/>
-          </div>
-          <div id="traditional-breads">
-          <TraditionalBreads/>
-          </div>
-          <div id="drink-menus">
-           <DrinkMenu/>
-          </div>
-          <div id="desert-menus">
-          <Deserts/>
-          </div>
-        </div>
+      {
+
+        (
+  <div className="col-md-9  px-0 py-2 menu-items border border-danger">
+
+  <div id="starters">
+    <StarterMenus/>
+  </div>
+  <div id="main-courses">
+   <MainCourses/>
+  </div>
+  <div id="traditional-breads">
+  <TraditionalBreads/>
+  </div>
+  <div id="drink-menus">
+   <DrinkMenu/>
+  </div>
+  <div id="desert-menus">
+  <Deserts/>
+  </div>
+</div>
+        )
+      }
+
+    
         </div>
         </div>
     </div>
