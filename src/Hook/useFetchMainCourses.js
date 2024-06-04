@@ -9,7 +9,7 @@ const useFetchMainCourses = (endpoint) => {
     const fetchData = async () => {
       setIsLoading(true);
       try {
-        const response = await fetch(`https://royal-naan-curry-bar.onrender.com/api/v1/fooditem/MainCourses/${endpoint}`, {
+        const response = await fetch(`http://miltongaire.com:4000/api/v1/fooditem/MainCourses/${endpoint}`, {
           method: 'GET'
         });
 

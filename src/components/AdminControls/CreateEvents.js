@@ -73,7 +73,7 @@ const handleEvents=async(e)=>{
 
     e.preventDefault();
 
-    const response=await fetch("https://royal-naan-curry-bar.onrender.com/api/v1/events/add-events",{
+    const response=await fetch("http://miltongaire.com:4000/api/v1/events/add-events",{
         method:"POST",
         headers: {
             "Content-Type": "application/json",
@@ -110,7 +110,7 @@ setTimeout(() => {
 
 const markAsCompleted=async(id)=>{
 
-    const response=await fetch("https://royal-naan-curry-bar.onrender.com/api/v1/events/mark-complete/"+id,{
+    const response=await fetch("http://miltongaire.com:4000/api/v1/events/mark-complete/"+id,{
         method:"PATCH",
         headers:{
             "Content-Type":"application/json",
@@ -139,7 +139,7 @@ useEffect(()=>{
 
     const fetchEvents=async()=>{
     
-        const response=await fetch("https://royal-naan-curry-bar.onrender.com/api/v1/events/active-events",{
+        const response=await fetch("http://miltongaire.com:4000/api/v1/events/active-events",{
             method:"GET",
         })
 

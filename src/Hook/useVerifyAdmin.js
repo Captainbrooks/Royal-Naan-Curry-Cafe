@@ -29,7 +29,7 @@ function useVerifyAdmin() {
     
         if (isverifiedAdmin) {
     
-          const response = await fetch("https://royal-naan-curry-bar.onrender.com/api/v1/user/verifyadmin", {
+          const response = await fetch("http://miltongaire.com:4000/api/v1/user/verifyadmin", {
             method: "POST",
             headers: {
               "Content-Type": "application/json",

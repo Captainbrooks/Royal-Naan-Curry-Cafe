@@ -10,7 +10,7 @@ const useFetchByCategory = (endpoint) => {
       setIsLoading(true);
       try {
         const encodedEndpoint = encodeURIComponent(endpoint);
-        const response = await fetch(`https://royal-naan-curry-bar.onrender.com/api/v1/fooditem/${encodedEndpoint}`, {
+        const response = await fetch(`http://miltongaire.com:4000/api/v1/fooditem/${encodedEndpoint}`, {
           method: 'GET'
         });
 

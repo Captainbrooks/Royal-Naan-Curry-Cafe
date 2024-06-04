@@ -17,7 +17,7 @@ function ForgotPassword() {
 
         e.preventDefault();
 
-        const response = await fetch("https://royal-naan-curry-bar.onrender.com/api/v1/user/forgot-password/", {
+        const response = await fetch("http://miltongaire.com:4000/api/v1/user/forgot-password/", {
             method: "POST",
             headers: {
                 "Content-Type": "application/json",

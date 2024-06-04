@@ -54,7 +54,7 @@ const Login = () => {
     setResendMessage("");
 
     console.log("handle resend code is clicked");
-    const response = await fetch("https://royal-naan-curry-bar.onrender.com/api/v1/user/resend-code", {
+    const response = await fetch("http://miltongaire.com:4000/api/v1/user/resend-code", {
       method: "POST",
       headers: {
         "Content-Type": "application/json"
