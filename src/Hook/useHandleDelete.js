@@ -26,7 +26,7 @@ const handleDelete=async(id)=>{
 
     setIsLoading(true);
 
-    const response=await fetch("http://miltongaire.com:4000/api/v1/fooditem/delete/"+id,{
+    const response=await fetch(`${process.env.REACT_APP_BASE_URL}/api/v1/fooditem/delete/`+id,{
 
     method:"DELETE",
     headers:{

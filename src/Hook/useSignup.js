@@ -18,7 +18,7 @@ export const useSignup=()=>{
         setIsLoading(true)
         setError(null)
 
-        const response=await fetch("http://miltongaire.com:4000/api/v1/user/signup",{
+        const response=await fetch(`${process.env.REACT_APP_BASE_URL}/api/v1/user/signup`,{
             method:"POST",
             headers:{"Content-Type":"application/json"},
             body:JSON.stringify({username,email,phone,password,confirmPassword})

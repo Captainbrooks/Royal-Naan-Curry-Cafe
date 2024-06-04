@@ -29,7 +29,7 @@ function useVerifyAdmin() {
     
         if (isverifiedAdmin) {
     
-          const response = await fetch("http://miltongaire.com:4000/api/v1/user/verifyadmin", {
+          const response = await fetch(`${process.env.REACT_APP_BASE_URL}/api/v1/user/verifyadmin`, {
             method: "POST",
             headers: {
               "Content-Type": "application/json",
