@@ -11,7 +11,7 @@ function useContact() {
         setError(null)
         
 
-    const response=await fetch("http://miltongaire.com:4000/api/v1/contact",{
+    const response=await fetch(`${process.env.REACT_APP_BASE_URL}/api/v1/contact`,{
         method:"POST",
         headers:{"Content-Type":"application/json"},
         body:JSON.stringify({name,email,phone,message})

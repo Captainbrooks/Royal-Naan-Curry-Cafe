@@ -9,8 +9,9 @@ const useFetchByCategory = (endpoint) => {
     const fetchData = async () => {
       setIsLoading(true);
       try {
+        const baseUrl = process.env.REACT_APP_BASE_URL;
         const encodedEndpoint = encodeURIComponent(endpoint);
-        const response = await fetch(`http://miltongaire.com:4000/api/v1/fooditem/${encodedEndpoint}`, {
+        const response = await fetch(`${baseUrl}/api/v1/fooditem/${encodedEndpoint}`, {
           method: 'GET'
         });
 

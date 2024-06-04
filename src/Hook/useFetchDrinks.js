@@ -9,7 +9,7 @@ const useFetchDrinks = (endpoint) => {
     const fetchData = async () => {
       setIsLoading(true);
       try {
-        const response = await fetch(`http://miltongaire.com:4000/api/v1/fooditem/DrinkMenus/${endpoint}`, {
+        const response = await fetch(`${process.env.REACT_APP_BASE_URL}/api/v1/fooditem/DrinkMenus/${endpoint}`, {
           method: 'GET'
         });
 
