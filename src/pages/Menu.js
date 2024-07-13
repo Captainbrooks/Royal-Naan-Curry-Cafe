@@ -172,7 +172,6 @@ function Menu() {
                   <div className="search">
                     <span className="search-icon material-symbols-outlined">Search</span>
                     <input type="search" value={search} onChange={(e) => setSearch(e.target.value)} className="search-input" placeholder="Search" />
-
                   </div>
                 </form>
               </div>
