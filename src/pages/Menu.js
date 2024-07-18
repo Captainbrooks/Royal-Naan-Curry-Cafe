@@ -112,21 +112,13 @@ function Menu() {
   }, [search]);
 
 
-
-
-
-
-
-
   useEffect(() => {
     const handleSearch = async () => {
 
 
-      const response = await fetch("http://miltongaire.com:4000/api/v1/fooditem/getfoods/search?term=" + search, {
+      const response = await fetch(`${process.env.REACT_APP_BASE_URL}/api/v1/fooditem/getfoods/search?term=` + search, {
         method: "GET"
       });
-
-
 
       if (response.ok) {
         const data = await response.json();

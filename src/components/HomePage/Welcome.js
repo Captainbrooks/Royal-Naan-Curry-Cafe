@@ -18,8 +18,6 @@ function Welcome() {
         <h1 class="text-warning font-weight-bold text-center">
           Welcome to Royal Naan Curry <br /> & <br /> Cafe
         </h1>
-
-
         <p className='text-muted text-center text-md-left'>Contemporary Indian Cuisine with freshly local produce
           and constantly inventing creative platters
         </p>
