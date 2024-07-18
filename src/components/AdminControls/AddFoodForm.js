@@ -77,7 +77,7 @@ console.log(data);
 
 
 try {
-    const response=await fetch("http://miltongaire.com:4000/api/v1/fooditem",{
+    const response=await fetch(`${process.env.REACT_APP_BASE_URL}/api/v1/fooditem`,{
         method:"POST",
         body:JSON.stringify(data),
         headers: {

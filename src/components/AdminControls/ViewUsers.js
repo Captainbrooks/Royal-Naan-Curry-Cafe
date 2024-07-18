@@ -13,7 +13,7 @@ function ViewUsers() {
     const[allusers,setAllUsers]=useState([]);
 
     const getAllUsers=async()=>{
-        const response=await fetch("http://miltongaire.com:4000/api/v1/user/get-users",{
+        const response=await fetch(`${process.env.REACT_APP_BASE_URL}/api/v1/user/get-users`,{
             method:"GET",
             headers:{
                 "Content-Type":"application/json",
@@ -46,7 +46,7 @@ function ViewUsers() {
 
         
         try {
-            const response=await fetch("http://miltongaire.com:4000/api/v1/user/makeadmin/"+id,{
+            const response=await fetch(`${process.env.REACT_APP_BASE_URL}/api/v1/user/makeadmin/`+id,{
                 method:"PATCH",
                 headers:{
                     "Content-Type":"application/json",
@@ -71,7 +71,7 @@ const deleteUser=async(id)=>{
 
         
     try {
-        const response=await fetch("http://miltongaire.com:4000/api/v1/user/delete/"+id,{
+        const response=await fetch("${process.env.REACT_APP_BASE_URL}/api/v1/user/delete/"+id,{
             method:"DELETE",
             headers:{
                 "Content-Type":"application/json",

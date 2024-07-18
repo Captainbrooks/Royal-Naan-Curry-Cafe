@@ -44,7 +44,7 @@ function PasswordReset() {
 const handleSubmit=async(e)=>{
     e.preventDefault();
 
-    const response=await fetch(`http://miltongaire.com:4000/api/v1/user/reset-password/?email=${email}`,{
+    const response=await fetch(`${process.env.REACT_APP_BASE_URL}/api/v1/user/reset-password/?email=${email}`,{
         method:"POST",
         headers:{
             "Content-Type":"application/json"

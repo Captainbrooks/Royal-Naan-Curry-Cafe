@@ -15,7 +15,7 @@ function Events() {
   }, []);
 
   const fetchEvents = async () => {
-    const response = await fetch("http://miltongaire.com:4000/api/v1/events/active-events", {
+    const response = await fetch("${process.env.REACT_APP_BASE_URL}/api/v1/events/active-events", {
       method: "GET"
     });
 

@@ -15,7 +15,7 @@ const handleIssue=async(e)=>{
 
 
     try {
-        const response=await fetch("http://miltongaire.com:4000/api/v1/admin/issue",{
+        const response=await fetch(`${process.env.REACT_APP_BASE_URL}/api/v1/admin/issue`,{
             method:"POST",
             headers:{
                 "Content-Type":"application/json",

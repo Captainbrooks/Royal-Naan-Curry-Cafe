@@ -20,7 +20,7 @@ function ViewReservation() {
 
     const markAsCompleted=async(id)=>{
 
-        const response=await fetch("http://miltongaire.com:4000/api/v1/reservations/mark-complete/"+id,{
+        const response=await fetch(`${process.env.REACT_APP_BASE_URL}/api/v1/reservations/mark-complete/`+id,{
             method:"PATCH",
             headers:{
                 "Content-Type":"application/json",
@@ -48,7 +48,7 @@ function ViewReservation() {
 
         const fetchReservations=async()=>{
         
-            const response=await fetch("http://miltongaire.com:4000/api/v1/reservations",{
+            const response=await fetch(`${process.env.REACT_APP_BASE_URL}/api/v1/reservations`,{
                 method:"GET",
                 headers:{
                     "Authorization":`Bearer ${token}`

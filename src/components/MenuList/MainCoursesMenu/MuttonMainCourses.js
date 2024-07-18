@@ -50,7 +50,7 @@ function MuttonMainCourses() {
           ) : (
             <div>
               <h4 className='text-muted'>No Starter Items</h4>
-              {isAdmin && <Link to="/add-food"><button className='btn btn-primary'>Add Starter Items</button></Link>}
+              {isAdmin && <Link to="/admin-dashboard"><button className='btn btn-primary'>Add Starter Items</button></Link>}
             </div>
           )}
         </div>
