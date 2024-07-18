@@ -160,11 +160,12 @@ function Menu() {
 
             <div className="row mt-3">
               <div className="col-9 col-sm-8 col-md-6">
-                <form>
+                <form >
                   <div className="search">
                     <span className="search-icon material-symbols-outlined">Search</span>
                     <input type="search" value={search} onChange={(e) => setSearch(e.target.value)} className="search-input" placeholder="Search" />
                   </div>
+                
                 </form>
               </div>
 
