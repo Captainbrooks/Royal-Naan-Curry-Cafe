@@ -77,6 +77,8 @@ const data={
    subcategory: selectedSubcategory   
 }
 
+console.log("Add food is clicked..")
+
 try {
     const response=await fetch(`${process.env.REACT_APP_BASE_URL}/api/v1/fooditem`,{
         method:"POST",
@@ -85,6 +87,8 @@ try {
             "Content-Type": "application/json"
         },
     })
+
+  
 
     const json= await response.json();
 
