@@ -1,22 +1,34 @@
-.bg-info-subtle{
-  font-size: 0.75rem;
-}
-  
-  .each-food {
-  margin:1.5rem;
-  }
+.food-card {
+  position: relative;
+  overflow: hidden;
+  height:20rem;
 
-
-  /* When screen is smaller than 576px width 60% */
-.food-image {
-  width: 60%;
-  border-radius: 50%;
-  margin-bottom: 1.5rem;
+  border-radius: 8px; /* Optional: Rounded corners */
 }
 
-/* When screen is larger than 576px width 40% */
-@media (min-width: 576px) {
-  .food-image {
-    width: 50%;
-  }
+.food-card img {
+  height: 100%;
+  object-fit: cover;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+  padding: 20px;
+  text-align: center;
+}
+
+.food-card:hover .overlay {
+  opacity: 1;
+}
+
+.food-card h3,
+.food-card p {
+  margin: 0;
 }

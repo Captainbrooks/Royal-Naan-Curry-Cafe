@@ -10,10 +10,7 @@ import Headroom from 'react-headroom';
 function Home() {
   return (
     <div className="home-page">
-<Headroom>
-      <Navbar />
 
-      </Headroom>
 
       
       <Welcome />

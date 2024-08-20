@@ -18,7 +18,7 @@ import { Link } from "react-router-dom";
 
 function Footer() {
   return (
-    <div className="container-fluid pt-5 custom-footer">
+    <div className="container-fluid pt-5 bg-black">
       <div className="container">
         <div className="row">
       
@@ -102,7 +102,7 @@ function Footer() {
                 placeholder="Enter your email"
               
               />
-              <button className="subscribe-input-button btn btn-warning">
+              <button className="subscribe-input-button btn btn-warning fw-bold">
                 Subscribe
               </button>
             </div>

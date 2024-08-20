@@ -42,7 +42,8 @@ function Navbar() {
 
 
 
-    <nav className="navbar navbar-expand-md sticky-top  custom-navbar">
+    <nav className="navbar navbar-expand-md sticky-top bg-black"
+    >
   <div className="container-md px-2 py-2">
     <div className="d-flex justify-content-between align-items-center w-100">
   <Link to="/"><img src={logo} className='logo-img' alt="" /></Link>
