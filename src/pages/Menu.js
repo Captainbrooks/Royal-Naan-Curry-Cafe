@@ -126,7 +126,7 @@ function Menu() {
       }
 
       if (!response.ok) {
-        const json = await response.json();
+       
         setSearchResult("Not found")
       }
 
